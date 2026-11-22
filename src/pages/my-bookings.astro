@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="My demo bookings | LearnNest" description="See your LearnNest demo bookings, saved in your own browser only. Cancel any demo booking. Nothing is sent or charged." path="/my-bookings">
+  <h1>My demo bookings</h1>
+  <p class="lede">Demo bookings you made on this site are saved in your own browser only. They are not sent anywhere, and nothing is booked or charged.</p>
+  <p class="demo-note"><strong>Demo only:</strong> bookings live in this browser's storage. Clearing your browser data removes them, and they never reach a tutor.</p>
+
+  <div id="bookings-list"></div>
+  <div id="bookings-empty" hidden>
+    <p><strong>No demo bookings yet — browse tutors to book a trial.</strong></p>
+    <p><a class="btn" href="/tutors">Browse tutors →</a></p>
+  </div>
+
+  <script>
+    (function () {
+      var listEl = document.getElementById('bookings-list');
+      var emptyEl = document.getElementById('bookings-empty');
+      var KEY = 'learnnest_bookings';
+
+      function readBookings() {
+        try {
+          if (typeof window === 'undefined' || !window.localStorage) return [];
+          var raw = window.localStorage.getItem(KEY);
+          if (!raw) return [];
+          var parsed = JSON.parse(raw);
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (e) { return []; }
+      }
+
+      function saveBookings(list) {
+        try {
+          if (typeof window !== 'undefined' && window.localStorage) {
+            window.localStorage.setItem(KEY, JSON.stringify(list));
+          }
+        } catch (e) { /* demo storage unavailable */ }
+      }
+
+      function render() {
+        var bookings = readBookings();
+        listEl.innerHTML = '';
+        if (bookings.length === 0) {
+          emptyEl.hidden = false;
+          return;
+        }
+        emptyEl.hidden = true;
+        bookings.forEach(function (b) {
+          var card = document.createElement('article');
+          card.className = 'card';
+          var lengthText = b.length === '50' ? '50 minutes' : '25 minutes';
+          card.innerHTML =
+            '<div class="booking-row"><div>' +
+            '<h2 style="margin-top:0">' + escapeHtml(b.tutorName || 'Demo tutor') + '</h2>' +
+            '<p><strong>' + escapeHtml(b.date || '') + '</strong> at <strong>' + escapeHtml(b.time || '') + ' UTC</strong> · ' + lengthText + '</p>' +
+            '<p class="meta">Reference: <strong>' + escapeHtml(b.reference || '') + '</strong> · Booked by ' + escapeHtml(b.name || '') + (b.goal ? ' · Goal: ' + escapeHtml(b.goal) : '') + '</p>' +
+            '<p><a href="/tutors/' + escapeHtml(b.tutorSlug || '') + '">View tutor profile →</a></p>' +
+            '</div></div>';
+          var row = card.querySelector('.booking-row');
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'cancel-btn';
+          btn.textContent = 'Cancel demo booking';
+          btn.addEventListener('click', function () {
+            var updated = readBookings().filter(function (x) { return x.reference !== b.reference; });
+            saveBookings(updated);
+            render();
+          });
+          row.appendChild(btn);
+          listEl.appendChild(card);
+        });
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+
+      render();
+    })();
+  </script>
+</BaseLayout>

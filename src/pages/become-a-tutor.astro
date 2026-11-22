@@ -30,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <p>Decide when and how many hours you want to teach. There is no minimum time commitment and no fixed schedule in the real product. You are your own boss.</p>
 
   <h2>Demo application</h2>
-  <p>Fill this in to see how an application would look. Nothing is sent or saved.</p>
+  <p>Fill this in to see how an application would look. It is saved in your own browser only — nothing is sent to anyone.</p>
   <form class="demo-form" id="tutor-form">
     <div><label for="t-name">Your name<input id="t-name" name="name" type="text" required autocomplete="name" /></label></div>
     <div><label for="t-email">Email<input id="t-email" name="email" type="email" required autocomplete="email" /></label></div>
@@ -38,12 +38,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div><label for="t-rate">Your price per 50-min lesson (USD)<input id="t-rate" name="rate" type="number" min="5" max="100" value="20" required /></label></div>
     <div><label for="t-about">Tell students about yourself<textarea id="t-about" name="about" rows="4" required placeholder="Who do you teach, and what happens in your lessons?"></textarea></label></div>
     <button class="btn" type="submit">Submit demo application</button>
-    <p id="tutor-done" hidden><strong>Demo application received — nothing was sent.</strong> In the real product this is where your profile would go for review.</p>
   </form>
+  <div class="confirm-box" id="tutor-done" hidden>
+    <p><strong>Demo application saved in your browser!</strong></p>
+    <p>Reference: <strong id="tutor-ref"></strong></p>
+    <p>Nothing was sent to anyone. In the real product this is where your profile would go for review.</p>
+  </div>
   <script>
     document.getElementById('tutor-form').addEventListener('submit', function (e) {
       e.preventDefault();
+      var ref = 'LN-APP-' + String(Math.floor(1000 + Math.random() * 9000));
+      var app = {
+        reference: ref,
+        name: document.getElementById('t-name').value.trim(),
+        email: document.getElementById('t-email').value.trim(),
+        language: document.getElementById('t-lang').value,
+        rate: document.getElementById('t-rate').value,
+        about: document.getElementById('t-about').value.trim(),
+        created: new Date().toISOString().slice(0, 10)
+      };
+      try {
+        if (typeof window !== 'undefined' && window.localStorage) {
+          var list = JSON.parse(window.localStorage.getItem('learnnest_applications') || '[]');
+          list.push(app);
+          window.localStorage.setItem('learnnest_applications', JSON.stringify(list));
+        }
+      } catch (err) { /* demo storage unavailable in this browser */ }
+      document.getElementById('tutor-ref').textContent = ref;
       document.getElementById('tutor-done').hidden = false;
+      document.getElementById('tutor-done').scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   </script>
 </BaseLayout>

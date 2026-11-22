@@ -10,7 +10,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div><label for="c-topic">Topic<select id="c-topic" name="topic"><option>Question about the demo</option><option>Report a mistake on a page</option><option>Become a tutor</option><option>LearnNest for Business</option><option>Something else</option></select></label></div>
     <div><label for="c-msg">Your message<textarea id="c-msg" name="message" rows="5" required></textarea></label></div>
     <button class="btn" type="submit">Send demo message</button>
-    <p id="contact-done" hidden><strong>Demo message — nothing was sent.</strong> In the real product this is where your message would reach the LearnNest team.</p>
+    <p id="contact-done" hidden aria-live="polite"><strong>Demo — your message was not sent anywhere.</strong> In the real product this is where your message would reach the LearnNest team.</p>
   </form>
   <script>
     document.getElementById('contact-form').addEventListener('submit', function (e) {

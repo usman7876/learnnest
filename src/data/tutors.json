@@ -1,1 +1,3063 @@
-{"meta":{"currency":"USD","lessonMinutes":50,"note":"DEMO DATA ONLY. Every tutor below is a sample profile created for LearnNest. These are not real people, and the prices, ratings, student counts and lesson counts are sample figures for demonstration.","updated":"2026-11-22"},"tutors":[{"about":"Hi, I'm Sofia. I help adults speak English with confidence at work and in everyday life. My lessons are friendly, practical, and built around real conversations, not textbook drills. We set one clear goal together and work towards it every week.","availability":["Mon–Fri: 9:00–13:00 UTC","Mon–Thu: 17:00–21:00 UTC","Sat: 10:00–14:00 UTC"],"avatarColor":"#4338CA","country":"United States","demo":true,"id":"sofia-m","initials":"SM","isProfessional":true,"isSuperTutor":true,"language":"English","lessons":3120,"name":"Sofia M.","price":28,"rating":4.9,"reviews":214,"slug":"sofia-m","speaks":["English (Native)","Spanish (Advanced)","French (Beginner)"],"specialties":["Conversation practice","Business English","Interview preparation"],"students":68,"trialPrice":14,"yearsExperience":7},{"about":"Hello, I'm James. I work with advanced learners who want clear, polished English for exams, study, and public speaking. Lessons are structured and calm, with honest feedback and a written plan after each session. This is a sample profile for LearnNest.","availability":["Mon–Fri: 8:00–12:00 UTC","Tue–Thu: 15:00–19:00 UTC"],"avatarColor":"#0F766E","country":"United Kingdom","demo":true,"id":"james-k","initials":"JK","isProfessional":true,"isSuperTutor":false,"language":"English","lessons":2840,"name":"James K.","price":45,"rating":5.0,"reviews":187,"slug":"james-k","speaks":["English (Native)","German (Intermediate)"],"specialties":["Exam preparation","Academic writing","Public speaking"],"students":42,"trialPrice":22.5,"yearsExperience":12},{"about":"Hola, I'm Lucia. I teach Spanish from the very first word, with lots of speaking from lesson one. We use stories, songs, and everyday situations, so new words stick. My aim is simple: you leave every lesson able to say something new.","availability":["Mon–Sat: 9:00–15:00 UTC","Sun: 11:00–14:00 UTC"],"avatarColor":"#BE185D","country":"Spain","demo":true,"id":"lucia-r","initials":"LR","isProfessional":true,"isSuperTutor":true,"language":"Spanish","lessons":4210,"name":"Lucia R.","price":18,"rating":4.9,"reviews":342,"slug":"lucia-r","speaks":["Spanish (Native)","English (Advanced)","Italian (Intermediate)"],"specialties":["Beginner Spanish","Travel Spanish","Grammar made simple"],"students":91,"trialPrice":9,"yearsExperience":6},{"about":"Hi, I'm Diego. I help learners understand real, everyday Spanish — the kind people actually speak. We listen, repeat, and talk about topics you enjoy, so lessons feel like a good conversation, not a test. This is a sample profile for LearnNest.","availability":["Mon–Fri: 14:00–22:00 UTC","Sat: 15:00–19:00 UTC"],"avatarColor":"#B45309","country":"Mexico","demo":true,"id":"diego-a","initials":"DA","isProfessional":true,"isSuperTutor":false,"language":"Spanish","lessons":1980,"name":"Diego A.","price":14,"rating":4.8,"reviews":156,"slug":"diego-a","speaks":["Spanish (Native)","English (Advanced)"],"specialties":["Conversational Spanish","Mexican Spanish","Listening practice"],"students":54,"trialPrice":7,"yearsExperience":4},{"about":"Bonjour, I'm Camille. I teach French step by step, with clear pronunciation practice and plenty of speaking time. We start with useful phrases you can use straight away, then build grammar slowly around them. Lessons are warm, patient, and paced to suit you.","availability":["Mon–Fri: 8:00–14:00 UTC","Wed–Fri: 16:00–20:00 UTC"],"avatarColor":"#7C3AED","country":"France","demo":true,"id":"camille-d","initials":"CD","isProfessional":true,"isSuperTutor":true,"language":"French","lessons":3540,"name":"Camille D.","price":24,"rating":4.9,"reviews":268,"slug":"camille-d","speaks":["French (Native)","English (Advanced)","Spanish (Intermediate)"],"specialties":["French for beginners","Pronunciation","French for travel"],"students":73,"trialPrice":12,"yearsExperience":8},{"about":"Hi, I'm Hugo. I help learners speak French naturally, including Canadian French expressions you won't find in a textbook. Lessons are relaxed and practical, with time to talk, ask questions, and build confidence. This is a sample profile for LearnNest.","availability":["Mon–Fri: 13:00–21:00 UTC","Sat: 14:00–18:00 UTC"],"avatarColor":"#0369A1","country":"Canada","demo":true,"id":"hugo-l","initials":"HL","isProfessional":false,"isSuperTutor":false,"language":"French","lessons":1120,"name":"Hugo L.","price":20,"rating":4.7,"reviews":98,"slug":"hugo-l","speaks":["French (Native)","English (Native)"],"specialties":["Canadian French","Conversation practice","French for work"],"students":31,"trialPrice":10,"yearsExperience":3},{"about":"Hallo, I'm Lena. I make German grammar feel manageable by breaking it into small, clear steps and practising each one in real sentences. I work with learners preparing for exams or a move to Germany, and with anyone who wants steady, visible progress.","availability":["Mon–Thu: 7:00–13:00 UTC","Mon–Fri: 16:00–20:00 UTC"],"avatarColor":"#15803D","country":"Germany","demo":true,"id":"lena-s","initials":"LS","isProfessional":true,"isSuperTutor":true,"language":"German","lessons":3980,"name":"Lena S.","price":26,"rating":5.0,"reviews":301,"slug":"lena-s","speaks":["German (Native)","English (Advanced)","French (Beginner)"],"specialties":["German grammar","Exam preparation","German for work"],"students":79,"trialPrice":13,"yearsExperience":9},{"about":"Hi, I'm Jonas. I help beginners take their first steps in German without feeling overwhelmed. We speak from the start, learn useful everyday words, and repeat them until they feel natural. This is a sample profile for LearnNest.","availability":["Tue–Sat: 10:00–16:00 UTC","Sun: 12:00–16:00 UTC"],"avatarColor":"#334155","country":"Austria","demo":true,"id":"jonas-b","initials":"JB","isProfessional":false,"isSuperTutor":false,"language":"German","lessons":1450,"name":"Jonas B.","price":18,"rating":4.8,"reviews":121,"slug":"jonas-b","speaks":["German (Native)","English (Advanced)"],"specialties":["Beginner German","Speaking confidence","Austrian German"],"students":38,"trialPrice":9,"yearsExperience":5},{"about":"Ciao, I'm Giulia. I teach Italian through food, travel, music, and everyday life in Italy, so learning feels enjoyable and real. We talk a lot, learn useful phrases, and build grammar gently as we go. Lessons are friendly and unhurried.","availability":["Mon–Sat: 8:00–14:00 UTC","Thu–Fri: 17:00–20:00 UTC"],"avatarColor":"#C2410C","country":"Italy","demo":true,"id":"giulia-f","initials":"GF","isProfessional":true,"isSuperTutor":false,"language":"Italian","lessons":2870,"name":"Giulia F.","price":22,"rating":4.9,"reviews":229,"slug":"giulia-f","speaks":["Italian (Native)","English (Advanced)","Spanish (Intermediate)"],"specialties":["Italian for beginners","Italian culture","Conversation practice"],"students":64,"trialPrice":11,"yearsExperience":6},{"about":"Hi, I'm Marco. I help travellers and beginners learn the Italian they will actually use — ordering food, asking directions, and chatting with locals. Lessons are short, practical, and fun. This is a sample profile for LearnNest.","availability":["Mon–Fri: 9:00–17:00 UTC","Sat: 10:00–13:00 UTC"],"avatarColor":"#0E7490","country":"Italy","demo":true,"id":"marco-p","initials":"MP","isProfessional":false,"isSuperTutor":false,"language":"Italian","lessons":960,"name":"Marco P.","price":16,"rating":4.7,"reviews":87,"slug":"marco-p","speaks":["Italian (Native)","English (Intermediate)"],"specialties":["Travel Italian","Beginner Italian","Pronunciation"],"students":29,"trialPrice":8,"yearsExperience":3},{"about":"Olá, I'm Beatriz. I teach Brazilian Portuguese with warmth and patience, starting with the words and phrases you need most. We practise speaking in every lesson, so you grow confident quickly. This is a sample profile for LearnNest.","availability":["Mon–Fri: 12:00–20:00 UTC","Sat: 13:00–17:00 UTC"],"avatarColor":"#9D174D","country":"Brazil","demo":true,"id":"beatriz-c","initials":"BC","isProfessional":true,"isSuperTutor":false,"language":"Portuguese","lessons":2130,"name":"Beatriz C.","price":15,"rating":4.8,"reviews":174,"slug":"beatriz-c","speaks":["Portuguese (Native)","English (Advanced)","Spanish (Advanced)"],"specialties":["Brazilian Portuguese","Beginner Portuguese","Conversation practice"],"students":52,"trialPrice":7.5,"yearsExperience":5},{"about":"Hi, I'm Tiago. I help learners discover European Portuguese, one clear step at a time. Lessons are calm and practical, with lots of listening and speaking. This is a sample profile for LearnNest.","availability":["Mon–Thu: 9:00–15:00 UTC","Fri–Sat: 10:00–14:00 UTC"],"avatarColor":"#1D4ED8","country":"Portugal","demo":true,"id":"tiago-n","initials":"TN","isProfessional":false,"isSuperTutor":false,"language":"Portuguese","lessons":820,"name":"Tiago N.","price":12,"rating":4.7,"reviews":76,"slug":"tiago-n","speaks":["Portuguese (Native)","English (Advanced)"],"specialties":["European Portuguese","Beginner Portuguese","Listening practice"],"students":24,"trialPrice":6,"yearsExperience":2},{"about":"Hello, I'm Layla. I teach Arabic from the alphabet onwards, patiently and clearly, so even complete beginners feel at ease. We read, write, and speak a little in every lesson, and I explain everything in simple English when you need it.","availability":["Sun–Thu: 8:00–14:00 UTC","Sun–Tue: 16:00–20:00 UTC"],"avatarColor":"#92400E","country":"Egypt","demo":true,"id":"layla-h","initials":"LH","isProfessional":false,"isSuperTutor":false,"language":"Arabic","lessons":2410,"name":"Layla H.","price":13,"rating":4.9,"reviews":203,"slug":"layla-h","speaks":["Arabic (Native)","English (Advanced)"],"specialties":["Arabic alphabet","Beginner Arabic","Egyptian Arabic"],"students":58,"trialPrice":6.5,"yearsExperience":6},{"about":"Hi, I'm Omar. I help learners speak Arabic with confidence in everyday situations. Lessons focus on real conversation, useful phrases, and clear pronunciation. This is a sample profile for LearnNest.","availability":["Mon–Fri: 10:00–18:00 UTC","Sat: 11:00–15:00 UTC"],"avatarColor":"#166534","country":"Jordan","demo":true,"id":"omar-s","initials":"OS","isProfessional":false,"isSuperTutor":false,"language":"Arabic","lessons":1340,"name":"Omar S.","price":10,"rating":4.8,"reviews":112,"slug":"omar-s","speaks":["Arabic (Native)","English (Advanced)","French (Beginner)"],"specialties":["Conversational Arabic","Arabic for travel","Listening practice"],"students":35,"trialPrice":5,"yearsExperience":4},{"about":"Hello, I'm Mei. I teach Mandarin with a clear, step-by-step method for tones and characters, so they stop feeling difficult. We practise speaking from the first lesson and review little and often, which is how progress really sticks.","availability":["Mon–Sat: 7:00–13:00 UTC","Mon–Wed: 15:00–18:00 UTC"],"avatarColor":"#B91C1C","country":"China","demo":true,"id":"mei-l","initials":"ML","isProfessional":true,"isSuperTutor":true,"language":"Mandarin Chinese","lessons":3760,"name":"Mei L.","price":22,"rating":5.0,"reviews":289,"slug":"mei-l","speaks":["Mandarin Chinese (Native)","English (Advanced)"],"specialties":["Mandarin tones","Beginner Mandarin","Chinese characters"],"students":81,"trialPrice":11,"yearsExperience":8},{"about":"Hi, I'm Wei. I work with learners who want Mandarin for work, travel, or study. Lessons are organised around your goals, with practical vocabulary and regular speaking practice. This is a sample profile for LearnNest.","availability":["Mon–Fri: 8:00–16:00 UTC","Sat: 9:00–12:00 UTC"],"avatarColor":"#475569","country":"Taiwan","demo":true,"id":"wei-c","initials":"WC","isProfessional":false,"isSuperTutor":false,"language":"Mandarin Chinese","lessons":1690,"name":"Wei C.","price":20,"rating":4.8,"reviews":143,"slug":"wei-c","speaks":["Mandarin Chinese (Native)","English (Advanced)"],"specialties":["Business Mandarin","Conversation practice","Traditional characters"],"students":44,"trialPrice":10,"yearsExperience":5},{"about":"Hello, I'm Yuki. I teach Japanese from the basics — hiragana, simple sentences, and polite everyday phrases — all the way to exam preparation. Lessons are gentle, well organised, and full of encouragement. You will always know what to practise next.","availability":["Mon–Fri: 7:00–12:00 UTC","Tue–Thu: 15:00–19:00 UTC"],"avatarColor":"#BE123C","country":"Japan","demo":true,"id":"yuki-t","initials":"YT","isProfessional":true,"isSuperTutor":true,"language":"Japanese","lessons":3290,"name":"Yuki T.","price":32,"rating":4.9,"reviews":256,"slug":"yuki-t","speaks":["Japanese (Native)","English (Advanced)"],"specialties":["Japanese for beginners","Hiragana and Katakana","JLPT preparation"],"students":69,"trialPrice":16,"yearsExperience":7},{"about":"Hi, I'm Ren. I help learners enjoy Japanese through conversation, culture, and topics they love. Lessons are relaxed and fun, with clear notes after each session. This is a sample profile for LearnNest.","availability":["Mon–Sat: 9:00–15:00 UTC","Sun: 10:00–13:00 UTC"],"avatarColor":"#0F766E","country":"Japan","demo":true,"id":"ren-k","initials":"RK","isProfessional":true,"isSuperTutor":false,"language":"Japanese","lessons":1580,"name":"Ren K.","price":24,"rating":4.8,"reviews":134,"slug":"ren-k","speaks":["Japanese (Native)","English (Intermediate)"],"specialties":["Conversational Japanese","Japanese for travel","Anime and culture"],"students":41,"trialPrice":12,"yearsExperience":4},{"about":"Hello, I'm Minji. I teach Korean starting with Hangul, so you can read real Korean words in your first few lessons. We build sentences step by step and practise speaking every time, with kind, clear feedback. Lessons are warm and encouraging.","availability":["Mon–Fri: 8:00–14:00 UTC","Sat: 9:00–13:00 UTC"],"avatarColor":"#7E22CE","country":"South Korea","demo":true,"id":"minji-p","initials":"MP","isProfessional":true,"isSuperTutor":true,"language":"Korean","lessons":3610,"name":"Minji P.","price":26,"rating":5.0,"reviews":278,"slug":"minji-p","speaks":["Korean (Native)","English (Advanced)"],"specialties":["Korean alphabet Hangul","Beginner Korean","K-drama Korean"],"students":76,"trialPrice":13,"yearsExperience":7},{"about":"Hi, I'm Joon. I help learners speak Korean naturally in everyday situations, from greetings to ordering food to chatting with friends. Lessons are practical and upbeat. This is a sample profile for LearnNest.","availability":["Tue–Sun: 10:00–18:00 UTC"],"avatarColor":"#1E40AF","country":"South Korea","demo":true,"id":"joon-h","initials":"JH","isProfessional":false,"isSuperTutor":false,"language":"Korean","lessons":1040,"name":"Joon H.","price":22,"rating":4.7,"reviews":91,"slug":"joon-h","speaks":["Korean (Native)","English (Advanced)"],"specialties":["Conversational Korean","Korean for travel","Pronunciation"],"students":28,"trialPrice":11,"yearsExperience":3},{"about":"Hello, I'm Ayesha. I teach Urdu to beginners and to learners reconnecting with family language, with patience and lots of speaking practice. We start with everyday words and simple sentences, and I explain the script clearly, one letter at a time.","availability":["Mon–Sat: 9:00–16:00 UTC","Sun: 10:00–14:00 UTC"],"avatarColor":"#065F46","country":"Pakistan","demo":true,"id":"ayesha-k","initials":"AK","isProfessional":true,"isSuperTutor":true,"language":"Urdu","lessons":2340,"name":"Ayesha K.","price":8,"rating":4.9,"reviews":198,"slug":"ayesha-k","speaks":["Urdu (Native)","English (Advanced)","Punjabi (Native)"],"specialties":["Beginner Urdu","Urdu script","Urdu for family"],"students":63,"trialPrice":4,"yearsExperience":6},{"about":"Hi, I'm Bilal. I help learners speak Urdu confidently in real conversations — with family, friends, and while travelling. Lessons are friendly and practical. This is a sample profile for LearnNest.","availability":["Mon–Fri: 11:00–19:00 UTC","Sat: 12:00–16:00 UTC"],"avatarColor":"#854D0E","country":"Pakistan","demo":true,"id":"bilal-r","initials":"BR","isProfessional":false,"isSuperTutor":false,"language":"Urdu","lessons":1270,"name":"Bilal R.","price":11,"rating":4.8,"reviews":104,"slug":"bilal-r","speaks":["Urdu (Native)","English (Advanced)"],"specialties":["Conversational Urdu","Urdu for travel","Listening practice"],"students":33,"trialPrice":5.5,"yearsExperience":4},{"about":"Hello, I'm Priya. I teach Hindi from the very beginning, including the Devanagari script, in small clear steps. We speak in every lesson and learn words you can use with family and friends straight away. Lessons are patient and encouraging.","availability":["Mon–Sat: 8:00–15:00 UTC","Sun: 11:00–14:00 UTC"],"avatarColor":"#9A3412","country":"India","demo":true,"id":"priya-s","initials":"PS","isProfessional":true,"isSuperTutor":false,"language":"Hindi","lessons":2190,"name":"Priya S.","price":12,"rating":4.9,"reviews":187,"slug":"priya-s","speaks":["Hindi (Native)","English (Advanced)"],"specialties":["Beginner Hindi","Hindi script Devanagari","Hindi for family"],"students":57,"trialPrice":6,"yearsExperience":5},{"about":"Hi, I'm Arjun. I help learners speak Hindi for travel, family, and everyday life. Lessons are relaxed, practical, and full of real examples. This is a sample profile for LearnNest.","availability":["Mon–Fri: 10:00–18:00 UTC","Sat: 10:00–14:00 UTC"],"avatarColor":"#4D7C0F","country":"India","demo":true,"id":"arjun-m","initials":"AM","isProfessional":false,"isSuperTutor":false,"language":"Hindi","lessons":910,"name":"Arjun M.","price":9,"rating":4.7,"reviews":83,"slug":"arjun-m","speaks":["Hindi (Native)","English (Advanced)","Urdu (Intermediate)"],"specialties":["Conversational Hindi","Hindi for travel","Pronunciation"],"students":26,"trialPrice":4.5,"yearsExperience":3}]}
+{
+  "meta": {
+    "currency": "USD",
+    "lessonMinutes": 50,
+    "note": "DEMO DATA ONLY. Every tutor below is a sample profile created for LearnNest. These are not real people, and the prices, ratings, student counts and lesson counts are sample figures for demonstration.",
+    "updated": "2026-11-22"
+  },
+  "tutors": [
+    {
+      "about": "Hi, I'm Sofia. I help adults speak English with confidence at work and in everyday life. My lessons are friendly, practical, and built around real conversations, not textbook drills. We set one clear goal together and work towards it every week.",
+      "availability": {
+        "Mon": [
+          "08:00",
+          "09:00"
+        ],
+        "Tue": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Wed": [
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#4338CA",
+      "country": "United States",
+      "demo": true,
+      "id": "sofia-m",
+      "initials": "SM",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "English",
+      "lessons": 3120,
+      "name": "Sofia M.",
+      "price": 28,
+      "rating": 4.9,
+      "slug": "sofia-m",
+      "speaks": [
+        "English (Native)",
+        "Spanish (Advanced)",
+        "French (Beginner)"
+      ],
+      "specialties": [
+        "Conversation practice",
+        "Business English",
+        "Interview preparation"
+      ],
+      "students": 68,
+      "trialPrice": 14,
+      "yearsExperience": 7,
+      "reviewCount": 214,
+      "reviews": [
+        {
+          "name": "Anna P.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Sofia explains everything so clearly. I finally feel confident speaking English out loud."
+        },
+        {
+          "name": "David L.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my English improving week by week."
+        },
+        {
+          "name": "Elena V.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Sofia is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hello, I'm James. I work with advanced learners who want clear, polished English for exams, study, and public speaking. Lessons are structured and calm, with honest feedback and a written plan after each session. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "11:00",
+          "12:00"
+        ],
+        "Wed": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Sat": [
+          "09:00",
+          "10:00"
+        ],
+        "Sun": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ]
+      },
+      "avatarColor": "#0F766E",
+      "country": "United Kingdom",
+      "demo": true,
+      "id": "james-k",
+      "initials": "JK",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "English",
+      "lessons": 2840,
+      "name": "James K.",
+      "price": 45,
+      "rating": 5.0,
+      "slug": "james-k",
+      "speaks": [
+        "English (Native)",
+        "German (Intermediate)"
+      ],
+      "specialties": [
+        "Exam preparation",
+        "Academic writing",
+        "Public speaking"
+      ],
+      "students": 42,
+      "trialPrice": 22.5,
+      "yearsExperience": 12,
+      "reviewCount": 187,
+      "reviews": [
+        {
+          "name": "Omar F.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Nadia H.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how James corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Leo T.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My English speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Today, 15:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hola, I'm Lucia. I teach Spanish from the very first word, with lots of speaking from lesson one. We use stories, songs, and everyday situations, so new words stick. My aim is simple: you leave every lesson able to say something new.",
+      "availability": {
+        "Mon": [
+          "10:00",
+          "11:00"
+        ],
+        "Tue": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Wed": [
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#BE185D",
+      "country": "Spain",
+      "demo": true,
+      "id": "lucia-r",
+      "initials": "LR",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "Spanish",
+      "lessons": 4210,
+      "name": "Lucia R.",
+      "price": 18,
+      "rating": 4.9,
+      "slug": "lucia-r",
+      "speaks": [
+        "Spanish (Native)",
+        "English (Advanced)",
+        "Italian (Intermediate)"
+      ],
+      "specialties": [
+        "Beginner Spanish",
+        "Travel Spanish",
+        "Grammar made simple"
+      ],
+      "students": 91,
+      "trialPrice": 9,
+      "yearsExperience": 6,
+      "reviewCount": 342,
+      "reviews": [
+        {
+          "name": "Mia K.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Lucia asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Lucas F.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Spanish is getting stronger."
+        },
+        {
+          "name": "Sofia L.",
+          "stars": 4,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Lucia made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 09:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Diego. I help learners understand real, everyday Spanish — the kind people actually speak. We listen, repeat, and talk about topics you enjoy, so lessons feel like a good conversation, not a test. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Sat": [
+          "11:00",
+          "12:00"
+        ],
+        "Sun": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ]
+      },
+      "avatarColor": "#B45309",
+      "country": "Mexico",
+      "demo": true,
+      "id": "diego-a",
+      "initials": "DA",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "Spanish",
+      "lessons": 1980,
+      "name": "Diego A.",
+      "price": 14,
+      "rating": 4.8,
+      "slug": "diego-a",
+      "speaks": [
+        "Spanish (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Conversational Spanish",
+        "Mexican Spanish",
+        "Listening practice"
+      ],
+      "students": 54,
+      "trialPrice": 7,
+      "yearsExperience": 4,
+      "reviewCount": 156,
+      "reviews": [
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Diego to anyone learning Spanish."
+        },
+        {
+          "name": "Anna P.",
+          "stars": 4,
+          "date": "2026-11-08",
+          "text": "Diego keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "David L.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Diego. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 12:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Bonjour, I'm Camille. I teach French step by step, with clear pronunciation practice and plenty of speaking time. We start with useful phrases you can use straight away, then build grammar slowly around them. Lessons are warm, patient, and paced to suit you.",
+      "availability": {
+        "Mon": [
+          "12:00",
+          "14:00"
+        ],
+        "Tue": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Wed": [
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#7C3AED",
+      "country": "France",
+      "demo": true,
+      "id": "camille-d",
+      "initials": "CD",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "French",
+      "lessons": 3540,
+      "name": "Camille D.",
+      "price": 24,
+      "rating": 4.9,
+      "slug": "camille-d",
+      "speaks": [
+        "French (Native)",
+        "English (Advanced)",
+        "Spanish (Intermediate)"
+      ],
+      "specialties": [
+        "French for beginners",
+        "Pronunciation",
+        "French for travel"
+      ],
+      "students": 73,
+      "trialPrice": 12,
+      "yearsExperience": 8,
+      "reviewCount": 268,
+      "reviews": [
+        {
+          "name": "Sara N.",
+          "stars": 4,
+          "date": "2026-02-11",
+          "text": "Camille explains everything so clearly. I finally feel confident speaking French out loud."
+        },
+        {
+          "name": "Omar F.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my French improving week by week."
+        },
+        {
+          "name": "Nadia H.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Camille is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Today, 20:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hi, I'm Hugo. I help learners speak French naturally, including Canadian French expressions you won't find in a textbook. Lessons are relaxed and practical, with time to talk, ask questions, and build confidence. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "16:00",
+          "17:00"
+        ],
+        "Wed": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Sat": [
+          "14:00",
+          "15:00"
+        ],
+        "Sun": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ]
+      },
+      "avatarColor": "#0369A1",
+      "country": "Canada",
+      "demo": true,
+      "id": "hugo-l",
+      "initials": "HL",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "French",
+      "lessons": 1120,
+      "name": "Hugo L.",
+      "price": 20,
+      "rating": 4.7,
+      "slug": "hugo-l",
+      "speaks": [
+        "French (Native)",
+        "English (Native)"
+      ],
+      "specialties": [
+        "Canadian French",
+        "Conversation practice",
+        "French for work"
+      ],
+      "students": 31,
+      "trialPrice": 10,
+      "yearsExperience": 3,
+      "reviewCount": 98,
+      "reviews": [
+        {
+          "name": "Paul D.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Mia K.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Hugo corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Lucas F.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My French speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 17:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hallo, I'm Lena. I make German grammar feel manageable by breaking it into small, clear steps and practising each one in real sentences. I work with learners preparing for exams or a move to Germany, and with anyone who wants steady, visible progress.",
+      "availability": {
+        "Mon": [
+          "15:00",
+          "16:00"
+        ],
+        "Tue": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Wed": [
+          "08:00",
+          "09:00"
+        ],
+        "Thu": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Fri": [
+          "12:00",
+          "14:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#15803D",
+      "country": "Germany",
+      "demo": true,
+      "id": "lena-s",
+      "initials": "LS",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "German",
+      "lessons": 3980,
+      "name": "Lena S.",
+      "price": 26,
+      "rating": 5.0,
+      "slug": "lena-s",
+      "speaks": [
+        "German (Native)",
+        "English (Advanced)",
+        "French (Beginner)"
+      ],
+      "specialties": [
+        "German grammar",
+        "Exam preparation",
+        "German for work"
+      ],
+      "students": 79,
+      "trialPrice": 13,
+      "yearsExperience": 9,
+      "reviewCount": 301,
+      "reviews": [
+        {
+          "name": "Hana Y.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Lena asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My German is getting stronger."
+        },
+        {
+          "name": "Anna P.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Lena made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Today, 10:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Jonas. I help beginners take their first steps in German without feeling overwhelmed. We speak from the start, learn useful everyday words, and repeat them until they feel natural. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Thu": [
+          "11:00",
+          "12:00"
+        ],
+        "Fri": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Sat": [
+          "16:00",
+          "17:00"
+        ],
+        "Sun": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ]
+      },
+      "avatarColor": "#334155",
+      "country": "Austria",
+      "demo": true,
+      "id": "jonas-b",
+      "initials": "JB",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "German",
+      "lessons": 1450,
+      "name": "Jonas B.",
+      "price": 18,
+      "rating": 4.8,
+      "slug": "jonas-b",
+      "speaks": [
+        "German (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Beginner German",
+        "Speaking confidence",
+        "Austrian German"
+      ],
+      "students": 38,
+      "trialPrice": 9,
+      "yearsExperience": 5,
+      "reviewCount": 121,
+      "reviews": [
+        {
+          "name": "Tom R.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Jonas to anyone learning German."
+        },
+        {
+          "name": "Sara N.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Jonas keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Omar F.",
+          "stars": 4,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Jonas. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Ciao, I'm Giulia. I teach Italian through food, travel, music, and everyday life in Italy, so learning feels enjoyable and real. We talk a lot, learn useful phrases, and build grammar gently as we go. Lessons are friendly and unhurried.",
+      "availability": {
+        "Mon": [
+          "17:00",
+          "18:00"
+        ],
+        "Tue": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Wed": [
+          "10:00",
+          "11:00"
+        ],
+        "Thu": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Fri": [
+          "15:00",
+          "16:00"
+        ],
+        "Sat": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#C2410C",
+      "country": "Italy",
+      "demo": true,
+      "id": "giulia-f",
+      "initials": "GF",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "Italian",
+      "lessons": 2870,
+      "name": "Giulia F.",
+      "price": 22,
+      "rating": 4.9,
+      "slug": "giulia-f",
+      "speaks": [
+        "Italian (Native)",
+        "English (Advanced)",
+        "Spanish (Intermediate)"
+      ],
+      "specialties": [
+        "Italian for beginners",
+        "Italian culture",
+        "Conversation practice"
+      ],
+      "students": 64,
+      "trialPrice": 11,
+      "yearsExperience": 6,
+      "reviewCount": 229,
+      "reviews": [
+        {
+          "name": "Julia S.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Giulia explains everything so clearly. I finally feel confident speaking Italian out loud."
+        },
+        {
+          "name": "Paul D.",
+          "stars": 4,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Italian improving week by week."
+        },
+        {
+          "name": "Mia K.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Giulia is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Today, 15:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Marco. I help travellers and beginners learn the Italian they will actually use — ordering food, asking directions, and chatting with locals. Lessons are short, practical, and fun. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "09:00",
+          "10:00"
+        ],
+        "Wed": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Thu": [
+          "14:00",
+          "15:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Sat": [
+          "18:00",
+          "19:00"
+        ],
+        "Sun": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ]
+      },
+      "avatarColor": "#0E7490",
+      "country": "Italy",
+      "demo": true,
+      "id": "marco-p",
+      "initials": "MP",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Italian",
+      "lessons": 960,
+      "name": "Marco P.",
+      "price": 16,
+      "rating": 4.7,
+      "slug": "marco-p",
+      "speaks": [
+        "Italian (Native)",
+        "English (Intermediate)"
+      ],
+      "specialties": [
+        "Travel Italian",
+        "Beginner Italian",
+        "Pronunciation"
+      ],
+      "students": 29,
+      "trialPrice": 8,
+      "yearsExperience": 3,
+      "reviewCount": 87,
+      "reviews": [
+        {
+          "name": "Sam J.",
+          "stars": 4,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Hana Y.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Marco corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Italian speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 09:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Olá, I'm Beatriz. I teach Brazilian Portuguese with warmth and patience, starting with the words and phrases you need most. We practise speaking in every lesson, so you grow confident quickly. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "08:00",
+          "09:00"
+        ],
+        "Tue": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Wed": [
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#9D174D",
+      "country": "Brazil",
+      "demo": true,
+      "id": "beatriz-c",
+      "initials": "BC",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "Portuguese",
+      "lessons": 2130,
+      "name": "Beatriz C.",
+      "price": 15,
+      "rating": 4.8,
+      "slug": "beatriz-c",
+      "speaks": [
+        "Portuguese (Native)",
+        "English (Advanced)",
+        "Spanish (Advanced)"
+      ],
+      "specialties": [
+        "Brazilian Portuguese",
+        "Beginner Portuguese",
+        "Conversation practice"
+      ],
+      "students": 52,
+      "trialPrice": 7.5,
+      "yearsExperience": 5,
+      "reviewCount": 174,
+      "reviews": [
+        {
+          "name": "Lena M.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Beatriz asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Tom R.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Portuguese is getting stronger."
+        },
+        {
+          "name": "Sara N.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Beatriz made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 12:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hi, I'm Tiago. I help learners discover European Portuguese, one clear step at a time. Lessons are calm and practical, with lots of listening and speaking. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [
+          "09:00",
+          "10:00"
+        ],
+        "Sun": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ]
+      },
+      "avatarColor": "#1D4ED8",
+      "country": "Portugal",
+      "demo": true,
+      "id": "tiago-n",
+      "initials": "TN",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Portuguese",
+      "lessons": 820,
+      "name": "Tiago N.",
+      "price": 12,
+      "rating": 4.7,
+      "slug": "tiago-n",
+      "speaks": [
+        "Portuguese (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "European Portuguese",
+        "Beginner Portuguese",
+        "Listening practice"
+      ],
+      "students": 24,
+      "trialPrice": 6,
+      "yearsExperience": 2,
+      "reviewCount": 76,
+      "reviews": [
+        {
+          "name": "Ken W.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Tiago to anyone learning Portuguese."
+        },
+        {
+          "name": "Julia S.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Tiago keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Paul D.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Tiago. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Today, 20:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hello, I'm Layla. I teach Arabic from the alphabet onwards, patiently and clearly, so even complete beginners feel at ease. We read, write, and speak a little in every lesson, and I explain everything in simple English when you need it.",
+      "availability": {
+        "Mon": [
+          "10:00",
+          "11:00"
+        ],
+        "Tue": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Wed": [
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00"
+        ],
+        "Sat": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#92400E",
+      "country": "Egypt",
+      "demo": true,
+      "id": "layla-h",
+      "initials": "LH",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Arabic",
+      "lessons": 2410,
+      "name": "Layla H.",
+      "price": 13,
+      "rating": 4.9,
+      "slug": "layla-h",
+      "speaks": [
+        "Arabic (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Arabic alphabet",
+        "Beginner Arabic",
+        "Egyptian Arabic"
+      ],
+      "students": 58,
+      "trialPrice": 6.5,
+      "yearsExperience": 6,
+      "reviewCount": 203,
+      "reviews": [
+        {
+          "name": "Aisha M.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Layla explains everything so clearly. I finally feel confident speaking Arabic out loud."
+        },
+        {
+          "name": "Sam J.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Arabic improving week by week."
+        },
+        {
+          "name": "Hana Y.",
+          "stars": 4,
+          "date": "2026-06-14",
+          "text": "Layla is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 17:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Omar. I help learners speak Arabic with confidence in everyday situations. Lessons focus on real conversation, useful phrases, and clear pronunciation. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "14:00",
+          "15:00"
+        ],
+        "Wed": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Thu": [
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Sat": [
+          "11:00",
+          "12:00"
+        ],
+        "Sun": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ]
+      },
+      "avatarColor": "#166534",
+      "country": "Jordan",
+      "demo": true,
+      "id": "omar-s",
+      "initials": "OS",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Arabic",
+      "lessons": 1340,
+      "name": "Omar S.",
+      "price": 10,
+      "rating": 4.8,
+      "slug": "omar-s",
+      "speaks": [
+        "Arabic (Native)",
+        "English (Advanced)",
+        "French (Beginner)"
+      ],
+      "specialties": [
+        "Conversational Arabic",
+        "Arabic for travel",
+        "Listening practice"
+      ],
+      "students": 35,
+      "trialPrice": 5,
+      "yearsExperience": 4,
+      "reviewCount": 112,
+      "reviews": [
+        {
+          "name": "Omar K.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Lena M.",
+          "stars": 4,
+          "date": "2026-07-02",
+          "text": "I like how Omar corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Tom R.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Arabic speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Today, 10:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hello, I'm Mei. I teach Mandarin with a clear, step-by-step method for tones and characters, so they stop feeling difficult. We practise speaking from the first lesson and review little and often, which is how progress really sticks.",
+      "availability": {
+        "Mon": [
+          "12:00",
+          "14:00"
+        ],
+        "Tue": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Wed": [
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#B91C1C",
+      "country": "China",
+      "demo": true,
+      "id": "mei-l",
+      "initials": "ML",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "Mandarin Chinese",
+      "lessons": 3760,
+      "name": "Mei L.",
+      "price": 22,
+      "rating": 5.0,
+      "slug": "mei-l",
+      "speaks": [
+        "Mandarin Chinese (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Mandarin tones",
+        "Beginner Mandarin",
+        "Chinese characters"
+      ],
+      "students": 81,
+      "trialPrice": 11,
+      "yearsExperience": 8,
+      "reviewCount": 289,
+      "reviews": [
+        {
+          "name": "Maria G.",
+          "stars": 4,
+          "date": "2026-08-21",
+          "text": "Mei asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Ken W.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Mandarin is getting stronger."
+        },
+        {
+          "name": "Julia S.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Mei made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hi, I'm Wei. I work with learners who want Mandarin for work, travel, or study. Lessons are organised around your goals, with practical vocabulary and regular speaking practice. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Sat": [
+          "14:00",
+          "15:00"
+        ],
+        "Sun": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ]
+      },
+      "avatarColor": "#475569",
+      "country": "Taiwan",
+      "demo": true,
+      "id": "wei-c",
+      "initials": "WC",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Mandarin Chinese",
+      "lessons": 1690,
+      "name": "Wei C.",
+      "price": 20,
+      "rating": 4.8,
+      "slug": "wei-c",
+      "speaks": [
+        "Mandarin Chinese (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Business Mandarin",
+        "Conversation practice",
+        "Traditional characters"
+      ],
+      "students": 44,
+      "trialPrice": 10,
+      "yearsExperience": 5,
+      "reviewCount": 143,
+      "reviews": [
+        {
+          "name": "Chris B.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Wei to anyone learning Mandarin."
+        },
+        {
+          "name": "Aisha M.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Wei keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Sam J.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Wei. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Today, 15:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hello, I'm Yuki. I teach Japanese from the basics — hiragana, simple sentences, and polite everyday phrases — all the way to exam preparation. Lessons are gentle, well organised, and full of encouragement. You will always know what to practise next.",
+      "availability": {
+        "Mon": [
+          "15:00",
+          "16:00"
+        ],
+        "Tue": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Wed": [
+          "08:00",
+          "09:00"
+        ],
+        "Thu": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Fri": [
+          "12:00",
+          "14:00"
+        ],
+        "Sat": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#BE123C",
+      "country": "Japan",
+      "demo": true,
+      "id": "yuki-t",
+      "initials": "YT",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "Japanese",
+      "lessons": 3290,
+      "name": "Yuki T.",
+      "price": 32,
+      "rating": 4.9,
+      "slug": "yuki-t",
+      "speaks": [
+        "Japanese (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Japanese for beginners",
+        "Hiragana and Katakana",
+        "JLPT preparation"
+      ],
+      "students": 69,
+      "trialPrice": 16,
+      "yearsExperience": 7,
+      "reviewCount": 256,
+      "reviews": [
+        {
+          "name": "Priya N.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Yuki explains everything so clearly. I finally feel confident speaking Japanese out loud."
+        },
+        {
+          "name": "Omar K.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Japanese improving week by week."
+        },
+        {
+          "name": "Lena M.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Yuki is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 09:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Ren. I help learners enjoy Japanese through conversation, culture, and topics they love. Lessons are relaxed and fun, with clear notes after each session. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "18:00",
+          "19:00"
+        ],
+        "Wed": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "11:00",
+          "12:00"
+        ],
+        "Fri": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [
+          "16:00",
+          "17:00"
+        ],
+        "Sun": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ]
+      },
+      "avatarColor": "#0F766E",
+      "country": "Japan",
+      "demo": true,
+      "id": "ren-k",
+      "initials": "RK",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "Japanese",
+      "lessons": 1580,
+      "name": "Ren K.",
+      "price": 24,
+      "rating": 4.8,
+      "slug": "ren-k",
+      "speaks": [
+        "Japanese (Native)",
+        "English (Intermediate)"
+      ],
+      "specialties": [
+        "Conversational Japanese",
+        "Japanese for travel",
+        "Anime and culture"
+      ],
+      "students": 41,
+      "trialPrice": 12,
+      "yearsExperience": 4,
+      "reviewCount": 134,
+      "reviews": [
+        {
+          "name": "Ravi D.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Maria G.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Ren corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Ken W.",
+          "stars": 4,
+          "date": "2026-09-09",
+          "text": "My Japanese speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 12:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hello, I'm Minji. I teach Korean starting with Hangul, so you can read real Korean words in your first few lessons. We build sentences step by step and practise speaking every time, with kind, clear feedback. Lessons are warm and encouraging.",
+      "availability": {
+        "Mon": [
+          "17:00",
+          "18:00"
+        ],
+        "Tue": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Wed": [
+          "10:00",
+          "11:00"
+        ],
+        "Thu": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "15:00",
+          "16:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#7E22CE",
+      "country": "South Korea",
+      "demo": true,
+      "id": "minji-p",
+      "initials": "MP",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "Korean",
+      "lessons": 3610,
+      "name": "Minji P.",
+      "price": 26,
+      "rating": 5.0,
+      "slug": "minji-p",
+      "speaks": [
+        "Korean (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Korean alphabet Hangul",
+        "Beginner Korean",
+        "K-drama Korean"
+      ],
+      "students": 76,
+      "trialPrice": 13,
+      "yearsExperience": 7,
+      "reviewCount": 278,
+      "reviews": [
+        {
+          "name": "Elena V.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Minji asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Chris B.",
+          "stars": 4,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Korean is getting stronger."
+        },
+        {
+          "name": "Aisha M.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Minji made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Today, 20:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Joon. I help learners speak Korean naturally in everyday situations, from greetings to ordering food to chatting with friends. Lessons are practical and upbeat. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "14:00",
+          "15:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Sat": [
+          "18:00",
+          "19:00"
+        ],
+        "Sun": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ]
+      },
+      "avatarColor": "#1E40AF",
+      "country": "South Korea",
+      "demo": true,
+      "id": "joon-h",
+      "initials": "JH",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Korean",
+      "lessons": 1040,
+      "name": "Joon H.",
+      "price": 22,
+      "rating": 4.7,
+      "slug": "joon-h",
+      "speaks": [
+        "Korean (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Conversational Korean",
+        "Korean for travel",
+        "Pronunciation"
+      ],
+      "students": 28,
+      "trialPrice": 11,
+      "yearsExperience": 3,
+      "reviewCount": 91,
+      "reviews": [
+        {
+          "name": "Leo T.",
+          "stars": 4,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Joon to anyone learning Korean."
+        },
+        {
+          "name": "Priya N.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Joon keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Omar K.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Joon. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 17:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hello, I'm Ayesha. I teach Urdu to beginners and to learners reconnecting with family language, with patience and lots of speaking practice. We start with everyday words and simple sentences, and I explain the script clearly, one letter at a time.",
+      "availability": {
+        "Mon": [
+          "08:00",
+          "09:00"
+        ],
+        "Tue": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Wed": [
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Sun": []
+      },
+      "avatarColor": "#065F46",
+      "country": "Pakistan",
+      "demo": true,
+      "id": "ayesha-k",
+      "initials": "AK",
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "language": "Urdu",
+      "lessons": 2340,
+      "name": "Ayesha K.",
+      "price": 8,
+      "rating": 4.9,
+      "slug": "ayesha-k",
+      "speaks": [
+        "Urdu (Native)",
+        "English (Advanced)",
+        "Punjabi (Native)"
+      ],
+      "specialties": [
+        "Beginner Urdu",
+        "Urdu script",
+        "Urdu for family"
+      ],
+      "students": 63,
+      "trialPrice": 4,
+      "yearsExperience": 6,
+      "reviewCount": 198,
+      "reviews": [
+        {
+          "name": "Sofia L.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Ayesha explains everything so clearly. I finally feel confident speaking Urdu out loud."
+        },
+        {
+          "name": "Ravi D.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Urdu improving week by week."
+        },
+        {
+          "name": "Maria G.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Ayesha is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "nextAvailable": "Today, 10:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "about": "Hi, I'm Bilal. I help learners speak Urdu confidently in real conversations — with family, friends, and while travelling. Lessons are friendly and practical. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "11:00",
+          "12:00"
+        ],
+        "Wed": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Sat": [
+          "09:00",
+          "10:00"
+        ],
+        "Sun": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ]
+      },
+      "avatarColor": "#854D0E",
+      "country": "Pakistan",
+      "demo": true,
+      "id": "bilal-r",
+      "initials": "BR",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Urdu",
+      "lessons": 1270,
+      "name": "Bilal R.",
+      "price": 11,
+      "rating": 4.8,
+      "slug": "bilal-r",
+      "speaks": [
+        "Urdu (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Conversational Urdu",
+        "Urdu for travel",
+        "Listening practice"
+      ],
+      "students": 33,
+      "trialPrice": 5.5,
+      "yearsExperience": 4,
+      "reviewCount": 104,
+      "reviews": [
+        {
+          "name": "David L.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Elena V.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Bilal corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Chris B.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Urdu speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hello, I'm Priya. I teach Hindi from the very beginning, including the Devanagari script, in small clear steps. We speak in every lesson and learn words you can use with family and friends straight away. Lessons are patient and encouraging.",
+      "availability": {
+        "Mon": [
+          "10:00",
+          "11:00"
+        ],
+        "Tue": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Wed": [
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "avatarColor": "#9A3412",
+      "country": "India",
+      "demo": true,
+      "id": "priya-s",
+      "initials": "PS",
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "language": "Hindi",
+      "lessons": 2190,
+      "name": "Priya S.",
+      "price": 12,
+      "rating": 4.9,
+      "slug": "priya-s",
+      "speaks": [
+        "Hindi (Native)",
+        "English (Advanced)"
+      ],
+      "specialties": [
+        "Beginner Hindi",
+        "Hindi script Devanagari",
+        "Hindi for family"
+      ],
+      "students": 57,
+      "trialPrice": 6,
+      "yearsExperience": 5,
+      "reviewCount": 187,
+      "reviews": [
+        {
+          "name": "Nadia H.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Priya asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Leo T.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Hindi is getting stronger."
+        },
+        {
+          "name": "Priya N.",
+          "stars": 4,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Priya made me feel relaxed from the very first lesson."
+        }
+      ],
+      "nextAvailable": "Today, 15:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "about": "Hi, I'm Arjun. I help learners speak Hindi for travel, family, and everyday life. Lessons are relaxed, practical, and full of real examples. This is a sample profile for LearnNest.",
+      "availability": {
+        "Mon": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Thu": [
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Sat": [
+          "11:00",
+          "12:00"
+        ],
+        "Sun": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ]
+      },
+      "avatarColor": "#4D7C0F",
+      "country": "India",
+      "demo": true,
+      "id": "arjun-m",
+      "initials": "AM",
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "language": "Hindi",
+      "lessons": 910,
+      "name": "Arjun M.",
+      "price": 9,
+      "rating": 4.7,
+      "slug": "arjun-m",
+      "speaks": [
+        "Hindi (Native)",
+        "English (Advanced)",
+        "Urdu (Intermediate)"
+      ],
+      "specialties": [
+        "Conversational Hindi",
+        "Hindi for travel",
+        "Pronunciation"
+      ],
+      "students": 26,
+      "trialPrice": 4.5,
+      "yearsExperience": 3,
+      "reviewCount": 83,
+      "reviews": [
+        {
+          "name": "Lucas F.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Arjun to anyone learning Hindi."
+        },
+        {
+          "name": "Sofia L.",
+          "stars": 4,
+          "date": "2026-11-08",
+          "text": "Arjun keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Ravi D.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Arjun. A very encouraging teacher."
+        }
+      ],
+      "nextAvailable": "Tomorrow, 09:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "emma-w",
+      "slug": "emma-w",
+      "name": "Emma W.",
+      "initials": "EW",
+      "language": "English",
+      "country": "United States",
+      "price": 30,
+      "rating": 4.9,
+      "reviewCount": 156,
+      "students": 48,
+      "lessons": 1980,
+      "yearsExperience": 5,
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "avatarColor": "#6D28D9",
+      "about": "Hi, I'm Emma. I help learners speak English naturally at work and with friends. Lessons are friendly and full of real conversation, with clear tips on pronunciation and the small words that make English sound natural.",
+      "specialties": [
+        "Conversational English",
+        "English for work",
+        "Grammar made simple"
+      ],
+      "speaks": [
+        "English (Native)",
+        "French (Intermediate)"
+      ],
+      "trialPrice": 15.0,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Anna P.",
+          "stars": 4,
+          "date": "2026-02-11",
+          "text": "Emma explains everything so clearly. I finally feel confident speaking English out loud."
+        },
+        {
+          "name": "David L.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my English improving week by week."
+        },
+        {
+          "name": "Elena V.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Emma is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "12:00",
+          "14:00"
+        ],
+        "Tue": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Wed": [
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Sun": []
+      },
+      "nextAvailable": "Tomorrow, 12:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "id": "carlos-m",
+      "slug": "carlos-m",
+      "name": "Carlos M.",
+      "initials": "CM",
+      "language": "Spanish",
+      "country": "Colombia",
+      "price": 19,
+      "rating": 4.8,
+      "reviewCount": 143,
+      "students": 47,
+      "lessons": 1760,
+      "yearsExperience": 6,
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "avatarColor": "#047857",
+      "about": "Hola, I'm Carlos. I teach Spanish the way people really speak it in Colombia — warm, clear, and full of everyday expressions. We talk a lot in every lesson, and I help you build sentences step by step.",
+      "specialties": [
+        "Spanish for beginners",
+        "Colombian Spanish",
+        "Speaking practice"
+      ],
+      "speaks": [
+        "Spanish (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 9.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Omar F.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Nadia H.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Carlos corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Leo T.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Spanish speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "16:00",
+          "17:00"
+        ],
+        "Wed": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Sat": [
+          "14:00",
+          "15:00"
+        ],
+        "Sun": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ]
+      },
+      "nextAvailable": "Today, 20:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "id": "chloe-b",
+      "slug": "chloe-b",
+      "name": "Chloe B.",
+      "initials": "CB",
+      "language": "French",
+      "country": "France",
+      "price": 27,
+      "rating": 4.9,
+      "reviewCount": 189,
+      "students": 55,
+      "lessons": 2210,
+      "yearsExperience": 7,
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "avatarColor": "#9F1239",
+      "about": "Bonjour, I'm Chloe. I teach French grammar in a way that finally makes sense, and I prepare learners for the DELF exams with calm, structured practice. Lessons are encouraging, with plenty of speaking time.",
+      "specialties": [
+        "French grammar",
+        "DELF preparation",
+        "Conversation practice"
+      ],
+      "speaks": [
+        "French (Native)",
+        "English (Advanced)",
+        "German (Beginner)"
+      ],
+      "trialPrice": 13.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Mia K.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Chloe asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Lucas F.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My French is getting stronger."
+        },
+        {
+          "name": "Sofia L.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Chloe made me feel relaxed from the very first lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "15:00",
+          "16:00"
+        ],
+        "Tue": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Wed": [
+          "08:00",
+          "09:00"
+        ],
+        "Thu": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Fri": [
+          "12:00",
+          "14:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "nextAvailable": "Tomorrow, 17:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "felix-h",
+      "slug": "felix-h",
+      "name": "Felix H.",
+      "initials": "FH",
+      "language": "German",
+      "country": "Germany",
+      "price": 23,
+      "rating": 4.8,
+      "reviewCount": 132,
+      "students": 39,
+      "lessons": 1540,
+      "yearsExperience": 4,
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "avatarColor": "#1E3A8A",
+      "about": "Hallo, I'm Felix. I help beginners speak German from the first lesson, with useful everyday phrases and patient pronunciation practice. We keep it simple, practical, and fun.",
+      "specialties": [
+        "Beginner German",
+        "German for work",
+        "Pronunciation"
+      ],
+      "speaks": [
+        "German (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 11.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Felix to anyone learning German."
+        },
+        {
+          "name": "Anna P.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Felix keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "David L.",
+          "stars": 4,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Felix. A very encouraging teacher."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Thu": [
+          "11:00",
+          "12:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Sat": [
+          "16:00",
+          "17:00"
+        ],
+        "Sun": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ]
+      },
+      "nextAvailable": "Today, 10:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "alessia-v",
+      "slug": "alessia-v",
+      "name": "Alessia V.",
+      "initials": "AV",
+      "language": "Italian",
+      "country": "Italy",
+      "price": 25,
+      "rating": 4.9,
+      "reviewCount": 167,
+      "students": 52,
+      "lessons": 2030,
+      "yearsExperience": 6,
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "avatarColor": "#A16207",
+      "about": "Ciao, I'm Alessia. I teach Italian for travel and everyday life, with the phrases you will actually use in Italy. We learn through stories, menus, and real conversations — and a little grammar along the way.",
+      "specialties": [
+        "Italian for travel",
+        "Italian grammar",
+        "Conversation practice"
+      ],
+      "speaks": [
+        "Italian (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 12.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Sara N.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Alessia explains everything so clearly. I finally feel confident speaking Italian out loud."
+        },
+        {
+          "name": "Omar F.",
+          "stars": 4,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Italian improving week by week."
+        },
+        {
+          "name": "Nadia H.",
+          "stars": 5,
+          "date": "2026-06-14",
+          "text": "Alessia is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "17:00",
+          "18:00"
+        ],
+        "Tue": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Wed": [
+          "10:00",
+          "11:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Fri": [
+          "15:00",
+          "16:00"
+        ],
+        "Sat": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Sun": []
+      },
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "rafael-d",
+      "slug": "rafael-d",
+      "name": "Rafael D.",
+      "initials": "RD",
+      "language": "Portuguese",
+      "country": "Brazil",
+      "price": 17,
+      "rating": 4.8,
+      "reviewCount": 118,
+      "students": 36,
+      "lessons": 1290,
+      "yearsExperience": 4,
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "avatarColor": "#155E75",
+      "about": "Olá, I'm Rafael. I teach Brazilian Portuguese with music, football, and everyday conversation. Lessons are relaxed and cheerful, and you will speak from the very first class.",
+      "specialties": [
+        "Portuguese for beginners",
+        "Brazilian culture",
+        "Speaking confidence"
+      ],
+      "speaks": [
+        "Portuguese (Native)",
+        "English (Advanced)",
+        "Spanish (Intermediate)"
+      ],
+      "trialPrice": 8.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Paul D.",
+          "stars": 4,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Mia K.",
+          "stars": 5,
+          "date": "2026-07-02",
+          "text": "I like how Rafael corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Lucas F.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Portuguese speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "09:00",
+          "10:00"
+        ],
+        "Wed": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Thu": [
+          "14:00",
+          "15:00"
+        ],
+        "Fri": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [
+          "18:00",
+          "19:00"
+        ],
+        "Sun": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ]
+      },
+      "nextAvailable": "Today, 15:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "id": "sara-a",
+      "slug": "sara-a",
+      "name": "Sara A.",
+      "initials": "SA",
+      "language": "Arabic",
+      "country": "Morocco",
+      "price": 14,
+      "rating": 4.9,
+      "reviewCount": 176,
+      "students": 49,
+      "lessons": 1870,
+      "yearsExperience": 5,
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "avatarColor": "#6B21A8",
+      "about": "Hello, I'm Sara. I teach Moroccan Arabic and Modern Standard Arabic for travel and everyday life. Lessons are clear and patient, with lots of listening and speaking practice.",
+      "specialties": [
+        "Moroccan Arabic",
+        "Beginner Arabic",
+        "Arabic for travel"
+      ],
+      "speaks": [
+        "Arabic (Native)",
+        "English (Advanced)",
+        "French (Advanced)"
+      ],
+      "trialPrice": 7.0,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Hana Y.",
+          "stars": 5,
+          "date": "2026-08-21",
+          "text": "Sara asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Arabic is getting stronger."
+        },
+        {
+          "name": "Anna P.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Sara made me feel relaxed from the very first lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "08:00",
+          "09:00"
+        ],
+        "Tue": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Wed": [
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "nextAvailable": "Tomorrow, 09:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "id": "li-n",
+      "slug": "li-n",
+      "name": "Li N.",
+      "initials": "LN",
+      "language": "Mandarin Chinese",
+      "country": "China",
+      "price": 21,
+      "rating": 4.9,
+      "reviewCount": 154,
+      "students": 46,
+      "lessons": 1740,
+      "yearsExperience": 6,
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "avatarColor": "#991B1B",
+      "about": "Hello, I'm Li. I prepare learners for the HSK exams and teach Mandarin from the very first character. Lessons are organised and encouraging, with tones practised in real sentences, not in isolation.",
+      "specialties": [
+        "HSK preparation",
+        "Mandarin for beginners",
+        "Chinese characters"
+      ],
+      "speaks": [
+        "Mandarin Chinese (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 10.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Tom R.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Li to anyone learning Mandarin."
+        },
+        {
+          "name": "Sara N.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Li keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Omar F.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Li. A very encouraging teacher."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Thu": [
+          "16:00",
+          "17:00"
+        ],
+        "Fri": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Sat": [
+          "09:00",
+          "10:00"
+        ],
+        "Sun": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ]
+      },
+      "nextAvailable": "Tomorrow, 12:00 UTC",
+      "responseTime": "within 2 hours",
+      "levels": [
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "hana-s",
+      "slug": "hana-s",
+      "name": "Hana S.",
+      "initials": "HS",
+      "language": "Japanese",
+      "country": "Japan",
+      "price": 29,
+      "rating": 4.9,
+      "reviewCount": 171,
+      "students": 51,
+      "lessons": 1980,
+      "yearsExperience": 5,
+      "isProfessional": true,
+      "isSuperTutor": true,
+      "avatarColor": "#831843",
+      "about": "Hello, I'm Hana. I teach polite Japanese (keigo) and everyday conversation, from the basics to JLPT N5 level. Lessons are gentle and well organised, with kind feedback after every session.",
+      "specialties": [
+        "Japanese for beginners",
+        "Keigo polite Japanese",
+        "JLPT N5 preparation"
+      ],
+      "speaks": [
+        "Japanese (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 14.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Julia S.",
+          "stars": 5,
+          "date": "2026-02-11",
+          "text": "Hana explains everything so clearly. I finally feel confident speaking Japanese out loud."
+        },
+        {
+          "name": "Paul D.",
+          "stars": 5,
+          "date": "2026-04-19",
+          "text": "Every lesson has a clear plan, and I can see my Japanese improving week by week."
+        },
+        {
+          "name": "Mia K.",
+          "stars": 4,
+          "date": "2026-06-14",
+          "text": "Hana is patient and kind. I never feel rushed, even when I make the same mistake twice."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "10:00",
+          "11:00"
+        ],
+        "Tue": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Wed": [
+          "15:00",
+          "16:00"
+        ],
+        "Thu": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ],
+        "Fri": [
+          "08:00",
+          "09:00"
+        ],
+        "Sat": [
+          "15:00",
+          "16:00",
+          "17:00"
+        ],
+        "Sun": []
+      },
+      "nextAvailable": "Today, 20:00 UTC",
+      "responseTime": "within 3 hours",
+      "levels": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "seoyeon-k",
+      "slug": "seoyeon-k",
+      "name": "Seoyeon K.",
+      "initials": "SK",
+      "language": "Korean",
+      "country": "South Korea",
+      "price": 28,
+      "rating": 4.8,
+      "reviewCount": 149,
+      "students": 44,
+      "lessons": 1620,
+      "yearsExperience": 5,
+      "isProfessional": true,
+      "isSuperTutor": false,
+      "avatarColor": "#3730A3",
+      "about": "Hello, I'm Seoyeon. I teach Korean for K-drama fans and complete beginners, starting with Hangul and building up to real conversations. Lessons are warm, lively, and full of culture.",
+      "specialties": [
+        "Beginner Korean",
+        "Korean for K-drama fans",
+        "TOPIK preparation"
+      ],
+      "speaks": [
+        "Korean (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 14.0,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Sam J.",
+          "stars": 5,
+          "date": "2026-05-27",
+          "text": "The lessons are fun and practical. I used what we practised on my trip the very next week."
+        },
+        {
+          "name": "Hana Y.",
+          "stars": 4,
+          "date": "2026-07-02",
+          "text": "I like how Seoyeon corrects me gently and gives me simple ways to remember new words."
+        },
+        {
+          "name": "Ben A.",
+          "stars": 5,
+          "date": "2026-09-09",
+          "text": "My Korean speaking has improved a lot. I look forward to every lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [],
+        "Tue": [
+          "14:00",
+          "15:00"
+        ],
+        "Wed": [
+          "09:00",
+          "10:00",
+          "11:00"
+        ],
+        "Thu": [
+          "18:00",
+          "19:00"
+        ],
+        "Fri": [
+          "14:00",
+          "15:00",
+          "16:00"
+        ],
+        "Sat": [
+          "11:00",
+          "12:00"
+        ],
+        "Sun": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ]
+      },
+      "nextAvailable": "Tomorrow, 17:00 UTC",
+      "responseTime": "within 6 hours",
+      "levels": [
+        "Beginner",
+        "Advanced"
+      ]
+    },
+    {
+      "id": "zara-t",
+      "slug": "zara-t",
+      "name": "Zara T.",
+      "initials": "ZT",
+      "language": "Urdu",
+      "country": "Pakistan",
+      "price": 9,
+      "rating": 4.9,
+      "reviewCount": 141,
+      "students": 42,
+      "lessons": 1480,
+      "yearsExperience": 4,
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "avatarColor": "#115E59",
+      "about": "Hello, I'm Zara. I teach Urdu to children and beginners, with songs, stories, and lots of speaking games. Lessons are patient and cheerful, and parents are always welcome to sit in.",
+      "specialties": [
+        "Beginner Urdu",
+        "Urdu for kids",
+        "Conversational Urdu"
+      ],
+      "speaks": [
+        "Urdu (Native)",
+        "English (Advanced)",
+        "Punjabi (Intermediate)"
+      ],
+      "trialPrice": 4.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Lena M.",
+          "stars": 4,
+          "date": "2026-08-21",
+          "text": "Zara asks about my goals and plans each lesson around them. It feels made for me."
+        },
+        {
+          "name": "Tom R.",
+          "stars": 5,
+          "date": "2026-09-30",
+          "text": "Clear notes after every lesson help me practise between sessions. My Urdu is getting stronger."
+        },
+        {
+          "name": "Sara N.",
+          "stars": 5,
+          "date": "2026-10-28",
+          "text": "I was nervous at first, but Zara made me feel relaxed from the very first lesson."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "12:00",
+          "14:00"
+        ],
+        "Tue": [
+          "08:00",
+          "09:00",
+          "10:00"
+        ],
+        "Wed": [
+          "17:00",
+          "18:00"
+        ],
+        "Thu": [
+          "12:00",
+          "14:00",
+          "15:00"
+        ],
+        "Fri": [
+          "10:00",
+          "11:00"
+        ],
+        "Sat": [],
+        "Sun": []
+      },
+      "nextAvailable": "Today, 10:00 UTC",
+      "responseTime": "the same day",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    },
+    {
+      "id": "vikram-s",
+      "slug": "vikram-s",
+      "name": "Vikram S.",
+      "initials": "VS",
+      "language": "Hindi",
+      "country": "India",
+      "price": 13,
+      "rating": 4.8,
+      "reviewCount": 127,
+      "students": 38,
+      "lessons": 1330,
+      "yearsExperience": 4,
+      "isProfessional": false,
+      "isSuperTutor": false,
+      "avatarColor": "#78350F",
+      "about": "Hello, I'm Vikram. I teach Hindi for business and everyday life, with clear Devanagari reading practice. Lessons are practical and relaxed, built around the words you need most.",
+      "specialties": [
+        "Hindi for beginners",
+        "Hindi for business",
+        "Devanagari reading"
+      ],
+      "speaks": [
+        "Hindi (Native)",
+        "English (Advanced)"
+      ],
+      "trialPrice": 6.5,
+      "demo": true,
+      "reviews": [
+        {
+          "name": "Ken W.",
+          "stars": 5,
+          "date": "2026-10-12",
+          "text": "Great structure and lots of speaking time. I recommend Vikram to anyone learning Hindi."
+        },
+        {
+          "name": "Julia S.",
+          "stars": 5,
+          "date": "2026-11-08",
+          "text": "Vikram keeps the lessons interesting with real-life topics instead of boring drills."
+        },
+        {
+          "name": "Paul D.",
+          "stars": 5,
+          "date": "2026-03-05",
+          "text": "I passed my practice test after a few months of lessons with Vikram. A very encouraging teacher."
+        }
+      ],
+      "availability": {
+        "Mon": [
+          "17:00",
+          "18:00",
+          "19:00"
+        ],
+        "Tue": [],
+        "Wed": [
+          "11:00",
+          "12:00",
+          "14:00"
+        ],
+        "Thu": [
+          "09:00",
+          "10:00"
+        ],
+        "Fri": [
+          "16:00",
+          "17:00",
+          "18:00"
+        ],
+        "Sat": [
+          "14:00",
+          "15:00"
+        ],
+        "Sun": [
+          "10:00",
+          "11:00",
+          "12:00"
+        ]
+      },
+      "nextAvailable": "Today, 18:00 UTC",
+      "responseTime": "within 1 hour",
+      "levels": [
+        "Beginner",
+        "Intermediate"
+      ]
+    }
+  ]
+}

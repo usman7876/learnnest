@@ -10,60 +10,176 @@ const { tutor } = Astro.props;
 const others = data.tutors.filter((t) => t.language === tutor.language && t.slug !== tutor.slug);
 const title = `${tutor.name} — ${tutor.language} tutor | LearnNest`;
 const description = `${tutor.name} is a sample ${tutor.language} tutor on LearnNest (demo profile). $${tutor.price} per 50-min lesson, trial $${tutor.trialPrice}. Not a real person.`;
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const dayNames = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
+const slotTimes = [...new Set(Object.values(tutor.availability).flat())].sort();
 ---
 <BaseLayout title={title} description={description} path={`/tutors/${tutor.slug}`}>
   <p><a href="/tutors">← All tutors</a> · <a href={`/tutors?lang=${encodeURIComponent(tutor.language)}`}>{tutor.language} tutors</a></p>
   <div class="demo-note"><strong>Demo profile:</strong> {tutor.name} is a sample profile created for LearnNest. This is not a real person, and the ratings, reviews and lesson counts are sample figures.</div>
+
   <section aria-labelledby="page-title">
     <div class="tutor-top">
       <div class="avatar avatar-lg" style={`background:${tutor.avatarColor}`} aria-hidden="true">{tutor.initials}</div>
       <div>
         <h1 id="page-title" style="margin:0">{tutor.name}</h1>
         <p class="meta">{tutor.language} tutor · From {tutor.country} · {tutor.yearsExperience} years’ experience (sample)</p>
-        <p><span class="stars">★ {tutor.rating}</span> <span class="meta">({tutor.reviews} sample reviews) · {tutor.students} students · {tutor.lessons.toLocaleString()} lessons (sample)</span></p>
+        <p><span class="stars">★ {tutor.rating}</span> <span class="meta">({tutor.reviewCount} sample reviews) · {tutor.students} students · {tutor.lessons.toLocaleString()} lessons (sample)</span></p>
         <p>{tutor.isSuperTutor && <span class="badge">Super tutor</span>} {tutor.isProfessional && <span class="badge badge-green">Professional</span>} <span class="badge badge-grey">Demo profile</span></p>
+        <p class="meta">Typically replies {tutor.responseTime} (sample) · Next available: <strong>{tutor.nextAvailable}</strong></p>
       </div>
     </div>
   </section>
 
-  <h2>About {tutor.name}</h2>
-  <p>{tutor.about}</p>
+  <div class="profile-layout">
+    <div>
+      <h2>About {tutor.name}</h2>
+      <p>{tutor.about}</p>
 
-  <h2>What {tutor.name} teaches</h2>
-  <div class="chips">{tutor.specialties.map((s) => <span class="chip">{s}</span>)}</div>
+      <h2>What {tutor.name} teaches</h2>
+      <div class="chips">{tutor.specialties.map((s) => <span class="chip">{s}</span>)}</div>
 
-  <h2>Languages spoken</h2>
-  <ul>{tutor.speaks.map((l) => <li>{l}</li>)}</ul>
+      <h2>Levels taught</h2>
+      <div class="chips">{tutor.levels.map((l) => <span class="chip">{l}</span>)}</div>
 
-  <h2>Sample availability</h2>
-  <p class="meta">Times shown are samples in UTC, for demonstration only.</p>
-  <table>
-    <thead><tr><th>Days</th><th>Times (UTC)</th></tr></thead>
-    <tbody>
-      {tutor.availability.map((a) => { const parts = a.split(': '); return <tr><td>{parts[0]}</td><td>{parts[1]}</td></tr>; })}
-    </tbody>
-  </table>
+      <h2>Languages spoken</h2>
+      <ul>{tutor.speaks.map((l) => <li>{l}</li>)}</ul>
 
-  <h2>Price</h2>
-  <p><span class="price">${tutor.price} <small>/ 50-minute lesson</small></span></p>
-  <p>Trial lesson: <strong>${tutor.trialPrice}</strong> for 25 minutes, or <strong>${tutor.price}</strong> for 50 minutes. Sample price — no payment is taken on this demo site.</p>
+      <h2>Sample availability</h2>
+      <p class="meta">Times shown are samples in UTC, for demonstration only. Tap a time to fill in the booking form.</p>
+      <div class="avail-grid">
+        {days.map((d) => (
+          <div class="avail-day">
+            <h3>{dayNames[d]}</h3>
+            {tutor.availability[d] && tutor.availability[d].length > 0 ? (
+              tutor.availability[d].map((time) => <button type="button" class="slot" data-day={d} data-time={time}>{time}</button>)
+            ) : (
+              <span class="off">No sample times</span>
+            )}
+          </div>
+        ))}
+      </div>
 
-  <h2>Book a demo trial lesson</h2>
-  <p>This form is a demonstration only. It sends nothing, books nothing, and charges nothing.</p>
-  <form class="demo-form" id="booking-form">
-    <div><label for="b-name">Your name<input id="b-name" name="name" type="text" required autocomplete="name" /></label></div>
-    <div><label for="b-email">Email<input id="b-email" name="email" type="email" required autocomplete="email" /></label></div>
-    <div><label for="b-date">Preferred date<input id="b-date" name="date" type="date" required /></label></div>
-    <div><label for="b-time">Preferred time (UTC)<select id="b-time" name="time" required><option value="">Choose a time…</option><option>09:00</option><option>12:00</option><option>15:00</option><option>18:00</option><option>20:00</option></select></label></div>
-    <div><label for="b-length">Lesson length<select id="b-length" name="length"><option value="25">25 minutes — ${tutor.trialPrice}</option><option value="50">50 minutes — ${tutor.price}</option></select></label></div>
-    <button class="btn" type="submit">Book demo trial</button>
-    <p id="booking-done" hidden><strong>Demo booking — nothing was booked or charged.</strong> In a real marketplace this is where your trial would be confirmed with {tutor.name}.</p>
-  </form>
-  <script>
-    document.getElementById('booking-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      document.getElementById('booking-done').hidden = false;
-    });
+      <h2>Sample reviews</h2>
+      <p class="meta">These are sample reviews written for this demo, not real reviews from real students.</p>
+      {tutor.reviews.map((r) => (
+        <article class="review">
+          <div class="review-head"><strong>{r.name}</strong><span class="stars">{'★'.repeat(r.stars)}{'☆'.repeat(5 - r.stars)}</span><span class="meta">{r.date} (sample)</span></div>
+          <p>{r.text}</p>
+        </article>
+      ))}
+    </div>
+
+    <aside class="booking-card" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Book a demo trial lesson</h2>
+      <p><span class="price">${tutor.price} <small>/ 50-minute lesson</small></span></p>
+      <p>Trial lesson: <strong>${tutor.trialPrice}</strong> for 25 minutes, or <strong>${tutor.price}</strong> for 50 minutes. Sample price — no payment is taken on this demo site.</p>
+      <p class="meta">Next available: <strong>{tutor.nextAvailable}</strong> · Typically replies {tutor.responseTime} (sample)</p>
+      <form class="demo-form" id="booking-form" novalidate>
+        <div><label for="b-name">Your name<input id="b-name" name="name" type="text" required autocomplete="name" /></label><p class="form-error" id="err-name" hidden></p></div>
+        <div><label for="b-email">Email<input id="b-email" name="email" type="email" required autocomplete="email" /></label><p class="form-error" id="err-email" hidden></p></div>
+        <div><label for="b-date">Preferred date<input id="b-date" name="date" type="date" required /></label><p class="form-error" id="err-date" hidden></p></div>
+        <div><label for="b-time">Preferred time (UTC)<select id="b-time" name="time" required><option value="">Choose a time…</option>{slotTimes.map((t) => <option value={t}>{t} UTC</option>)}</select></label><p class="form-error" id="err-time" hidden></p></div>
+        <div><label for="b-length">Lesson length<select id="b-length" name="length"><option value="25">25 minutes — ${tutor.trialPrice}</option><option value="50">50 minutes — ${tutor.price}</option></select></label></div>
+        <div><label for="b-goal">Your goal (optional)<textarea id="b-goal" name="goal" rows="3" placeholder="e.g. I want to practise speaking for my job."></textarea></label></div>
+        <button class="btn" type="submit">Book demo trial</button>
+        <p class="meta">Demo only — this saves a sample booking in your own browser. Nothing is sent, booked or charged.</p>
+      </form>
+      <div class="confirm-box" id="booking-done" hidden>
+        <p><strong>Demo booking saved!</strong></p>
+        <p>Your demo trial with {tutor.name} is saved in this browser only — nothing was booked or charged.</p>
+        <p>Reference: <strong id="booking-ref"></strong></p>
+        <p><a class="btn" href="/my-bookings">See my demo bookings →</a></p>
+        <p><button class="btn btn-secondary" type="button" id="book-again">Make another demo booking</button></p>
+      </div>
+    </aside>
+  </div>
+
+  <script define:vars={{ tutorSlug: tutor.slug, tutorName: tutor.name }}>
+    (function () {
+      var DAY_INDEX = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      var dateInput = document.getElementById('b-date');
+      var timeSelect = document.getElementById('b-time');
+      var form = document.getElementById('booking-form');
+      var doneBox = document.getElementById('booking-done');
+
+      // Clicking an availability slot prefills the booking form's date/time.
+      document.querySelectorAll('.slot').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.slot').forEach(function (b) { b.classList.remove('selected'); });
+          btn.classList.add('selected');
+          var dayIdx = DAY_INDEX[btn.getAttribute('data-day')];
+          var now = new Date();
+          var d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+          var add = (dayIdx - d.getDay() + 7) % 7;
+          d.setDate(d.getDate() + add);
+          var pad = function (n) { return String(n).padStart(2, '0'); };
+          dateInput.value = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+          var t = btn.getAttribute('data-time');
+          if (!Array.from(timeSelect.options).some(function (o) { return o.value === t; })) {
+            var opt = document.createElement('option');
+            opt.value = t; opt.textContent = t + ' UTC';
+            timeSelect.appendChild(opt);
+          }
+          timeSelect.value = t;
+          hideError('date'); hideError('time');
+        });
+      });
+
+      function showError(id, msg) {
+        var el = document.getElementById('err-' + id);
+        el.textContent = msg; el.hidden = false;
+      }
+      function hideError(id) {
+        var el = document.getElementById('err-' + id);
+        el.hidden = true; el.textContent = '';
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var ok = true;
+        var name = document.getElementById('b-name').value.trim();
+        var email = document.getElementById('b-email').value.trim();
+        var date = dateInput.value;
+        var time = timeSelect.value;
+        var length = document.getElementById('b-length').value;
+        var goal = document.getElementById('b-goal').value.trim();
+        if (!name) { showError('name', 'Please enter your name.'); ok = false; } else { hideError('name'); }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email', 'Please enter a valid email address.'); ok = false; } else { hideError('email'); }
+        if (!date) { showError('date', 'Please choose a date.'); ok = false; }
+        else {
+          var today = new Date(); today.setHours(0, 0, 0, 0);
+          if (new Date(date + 'T00:00:00') < today) { showError('date', 'Please choose today or a future date.'); ok = false; }
+          else { hideError('date'); }
+        }
+        if (!time) { showError('time', 'Please choose a time.'); ok = false; } else { hideError('time'); }
+        if (!ok) return;
+
+        var ref = 'LN-DEMO-' + String(Math.floor(1000 + Math.random() * 9000));
+        var booking = {
+          reference: ref, tutorSlug: tutorSlug, tutorName: tutorName,
+          date: date, time: time, length: length, name: name, email: email, goal: goal,
+          created: new Date().toISOString().slice(0, 10)
+        };
+        try {
+          if (typeof window !== 'undefined' && window.localStorage) {
+            var list = JSON.parse(window.localStorage.getItem('learnnest_bookings') || '[]');
+            list.push(booking);
+            window.localStorage.setItem('learnnest_bookings', JSON.stringify(list));
+          }
+        } catch (err) { /* demo storage unavailable in this browser; still show confirmation */ }
+        document.getElementById('booking-ref').textContent = ref;
+        form.hidden = true;
+        doneBox.hidden = false;
+        doneBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      document.getElementById('book-again').addEventListener('click', function () {
+        doneBox.hidden = true;
+        form.hidden = false;
+        form.reset();
+      });
+    })();
   </script>
 
   {others.length > 0 && (

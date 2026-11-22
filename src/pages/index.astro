@@ -6,20 +6,25 @@ import data from '../data/tutors.json';
 const tutors = data.tutors;
 const languages = [...new Set(tutors.map((t) => t.language))];
 const minPrice = Math.min(...tutors.map((t) => t.price));
-const featured = [...tutors].sort((a, b) => b.reviews - a.reviews).slice(0, 6);
+const featured = [...tutors].sort((a, b) => b.reviewCount - a.reviewCount).slice(0, 6);
 const faqs = [
   { q: 'Are the tutors on LearnNest real people?', a: 'No. LearnNest is a demo site. Every tutor profile is a sample created to show how the marketplace works. Names, photos, prices, ratings and lesson counts are sample figures, not real people or real reviews.' },
   { q: 'How much does a lesson cost?', a: 'Each sample tutor sets their own price for a 50-minute lesson. In this demo the prices run from $8 to $45. A 25-minute trial costs half the 50-minute price. No payment is taken on this demo site.' },
   { q: 'What happens after a trial lesson?', a: 'In a real marketplace you would choose a lesson pack and keep learning with the same tutor. On this demo, booking a trial only shows a confirmation on the page — nothing is booked and nothing is charged.' },
 ];
 ---
-<BaseLayout title="LearnNest — Learn a language 1-to-1 online" description="Find a 1-to-1 online language tutor on LearnNest. Browse 24 sample tutors in 12 languages, compare prices from $8, and book a demo trial." path="/" isHome faqs={faqs} itemList={featured}>
+<BaseLayout title="LearnNest — Learn a language 1-to-1 online" description="Find a 1-to-1 online language tutor on LearnNest. Browse 36 sample tutors in 12 languages, compare prices from $8, and book a demo trial." path="/" isHome faqs={faqs} itemList={featured}>
   <section class="hero" aria-labelledby="page-title">
     <h1 id="page-title">Learn a language with a real tutor, 1-to-1 online</h1>
     <p class="lede">Pick your language, choose a tutor who fits your goal and budget, and start speaking from your very first lesson — at a time that suits you.</p>
     <form class="search-form" action="/tutors" method="get" role="search">
-      <label for="home-search" style="position:absolute;left:-9999px">Search tutors</label>
-      <input id="home-search" name="q" type="search" placeholder="Try “English”, “Spanish” or a tutor name…" autocomplete="off" />
+      <label for="home-lang">Language</label>
+      <select id="home-lang" name="lang">
+        <option value="">Any language</option>
+        {languages.map((l) => <option value={l}>{l}</option>)}
+      </select>
+      <label for="home-search" style="position:absolute;left:-9999px">Your goal</label>
+      <input id="home-search" name="q" type="search" placeholder="Your goal — e.g. business English, travel Spanish…" autocomplete="off" />
       <button class="btn" type="submit">Find my tutor</button>
     </form>
     <p class="meta">No account needed to browse. Demo site — sample tutors only.</p>
@@ -50,7 +55,7 @@ const faqs = [
 
   <section aria-labelledby="lang-heading">
     <h2 id="lang-heading">Learn a language</h2>
-    <p>Twelve languages, two sample tutors for each. Choose one to see its tutors.</p>
+    <p>Twelve languages, three sample tutors for each. Choose one to see its tutors.</p>
     <div class="lang-grid">
       {languages.map((lang) => {
         const n = tutors.filter((t) => t.language === lang).length;

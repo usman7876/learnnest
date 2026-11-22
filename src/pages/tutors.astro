@@ -8,7 +8,7 @@ const languages = [...new Set(tutors.map((t) => t.language))];
 const minPrice = Math.min(...tutors.map((t) => t.price));
 const maxPrice = Math.max(...tutors.map((t) => t.price));
 ---
-<BaseLayout title="Find online language tutors | LearnNest" description="Browse 24 sample language tutors in 12 languages on LearnNest. Filter by language, price and rating, and compare demo trial prices." path="/tutors" itemList={tutors}>
+<BaseLayout title="Find online language tutors | LearnNest" description="Browse 36 sample language tutors in 12 languages on LearnNest. Filter by language, price and rating, and compare demo trial prices." path="/tutors" itemList={tutors}>
   <h1>Find your language tutor</h1>
   <p class="lede">Search {tutors.length} sample tutors in {languages.length} languages. Prices in this demo run from ${minPrice} to ${maxPrice} per 50-minute lesson. All profiles are samples, not real people.</p>
   <p class="demo-note"><strong>Demo data:</strong> ratings, reviews, student counts and lesson counts are sample figures. No tutor here is a real person.</p>
@@ -45,6 +45,18 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
       <option value="rating">Highest rating</option>
       <option value="lessons">Most lessons</option>
     </select>
+    <label class="checkbox-row" for="super-only"><input id="super-only" type="checkbox" /> Super tutors only</label>
+    <label for="day">Available on</label>
+    <select id="day">
+      <option value="">Any day</option>
+      <option value="Mon">Monday</option>
+      <option value="Tue">Tuesday</option>
+      <option value="Wed">Wednesday</option>
+      <option value="Thu">Thursday</option>
+      <option value="Fri">Friday</option>
+      <option value="Sat">Saturday</option>
+      <option value="Sun">Sunday</option>
+    </select>
   </div>
   <p><strong id="count"></strong></p>
   <div class="grid" id="tutor-grid">
@@ -64,6 +76,8 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
     const maxPrice = document.getElementById('maxPrice');
     const minRating = document.getElementById('minRating');
     const sort = document.getElementById('sort');
+    const superOnly = document.getElementById('super-only');
+    const day = document.getElementById('day');
     // Tutor data is read from the cards themselves, so the list and the
     // filters can never disagree about names, languages or prices.
     const data = cards.map((card) => {
@@ -77,6 +91,8 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
         price: priceMatch ? parseFloat(priceMatch[1]) : 999,
         rating: ratingMatch ? parseFloat(ratingMatch[1]) : 0,
         lessons: lessonsMatch ? parseInt(lessonsMatch[1].replace(/,/g, ''), 10) : 0,
+        isSuper: card.getAttribute('data-super') === 'true',
+        days: (card.getAttribute('data-days') || '').split(' ').filter(Boolean),
       };
     });
     function apply() {
@@ -89,6 +105,8 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
         if (langVal && !d.text.includes(langVal.toLowerCase() + ' tutor')) return false;
         if (d.price > max) return false;
         if (d.rating < minR) return false;
+        if (superOnly.checked && !d.isSuper) return false;
+        if (day.value && !d.days.includes(day.value)) return false;
         return true;
       });
       if (sort.value === 'price-asc') shown.sort((a, b) => a.price - b.price);
@@ -101,12 +119,14 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
       countEl.textContent = shown.length + (shown.length === 1 ? ' tutor' : ' tutors') + ' shown';
       noResults.hidden = shown.length !== 0;
     }
-    [q, lang, maxPrice, minRating, sort].forEach((el) => el.addEventListener('input', apply));
+    [q, lang, maxPrice, minRating, sort, superOnly, day].forEach((el) => el.addEventListener('input', apply));
     // Read ?q= and ?lang= from the URL, e.g. from the homepage search
     // or a language card. The values come only from this page's own URL.
     const params = new URLSearchParams(window.location.search);
     if (params.get('q')) q.value = params.get('q');
     if (params.get('lang')) lang.value = params.get('lang');
+    if (params.get('super') === '1') superOnly.checked = true;
+    if (params.get('day')) day.value = params.get('day');
     apply();
   </script>
 </BaseLayout>
