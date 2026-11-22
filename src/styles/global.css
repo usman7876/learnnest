@@ -87,3 +87,15 @@ footer.site-footer ul{list-style:none;padding:0;margin:0}
 footer.site-footer li{margin:6px 0}
 .footer-bottom{max-width:1120px;margin:24px auto 0;padding:16px 20px 0;border-top:1px solid #334155;font-size:.9rem}
 @media(max-width:760px){.main-nav{display:none;width:100%;flex-direction:column}.main-nav.open{display:flex}.nav-toggle{display:block}h1{font-size:1.75rem}}
+
+/* Guides */
+.crumbs{font-size:.9rem;color:var(--muted);margin:16px 0 0}
+.crumbs a{color:var(--primary)}
+.guide-cta{background:#EEF2FF;border:1px solid #C7D2FE;border-radius:var(--radius);padding:20px;margin:28px 0}
+.guide-cta h2{margin-top:0}
+.guide-list{list-style:none;padding:0}
+.guide-list li{margin:8px 0}
+.guide-list a{font-weight:600}
+.word-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+.word-table th,.word-table td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+.word-table th{background:#EEF2FF}

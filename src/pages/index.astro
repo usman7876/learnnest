@@ -66,6 +66,13 @@ const faqs = [
     <p><a class="btn btn-secondary" href="/pricing">See how pricing works →</a></p>
   </section>
 
+  <section aria-labelledby="guides-heading">
+    <h2 id="guides-heading">Learn how to learn</h2>
+    <p>Free guides to help you start — and keep going. Read how to learn Korean, Japanese or French, step by step.</p>
+    <p><a class="btn btn-secondary" href="/guides/how-to-learn-korean">How to learn Korean →</a> <a class="btn btn-secondary" href="/guides/how-to-learn-japanese">How to learn Japanese →</a> <a class="btn btn-secondary" href="/guides/how-to-learn-french">How to learn French →</a></p>
+    <p><a href="/guides">See all language learning guides →</a></p>
+  </section>
+
   <section aria-labelledby="faq-heading">
     <h2 id="faq-heading">Questions people ask</h2>
     {faqs.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}

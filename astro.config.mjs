@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 // Deploy the `dist/` folder to Vercel, Netlify, or any static host.
 // The site URL lives in exactly ONE place: here.
 export default defineConfig({
-  site: 'https://learnnest.vercel.app',
+  site: 'https://learnnest-three.vercel.app',
   integrations: [sitemap()],
 });
