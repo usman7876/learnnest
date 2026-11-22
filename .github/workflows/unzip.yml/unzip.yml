@@ -1,0 +1,36 @@
+name: Unzip LearnNest source
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/unzip.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract source ZIP
+        run: |
+          unzip -o learnnest-source.zip
+          rm learnnest-source.zip
+          if [ ! -f package.json ]; then
+            for d in */; do
+              if [ -f "${d}package.json" ]; then
+                mv "${d}"* ./
+                rmdir "${d}"
+              fi
+            done
+          fi
+          ls -la
+      - name: Commit extracted files
+        run: |
+          git config user.name "usman7876"
+          git config user.email "usman7876@users.noreply.github.com"
+          git add -A
+          git commit -m "Add LearnNest source files" || echo "nothing to commit"
+          git push
