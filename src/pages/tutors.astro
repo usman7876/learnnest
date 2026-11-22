@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TutorCard from '../components/TutorCard.astro';
+import data from '../data/tutors.json';
+
+const tutors = data.tutors;
+const languages = [...new Set(tutors.map((t) => t.language))];
+const minPrice = Math.min(...tutors.map((t) => t.price));
+const maxPrice = Math.max(...tutors.map((t) => t.price));
+---
+<BaseLayout title="Find online language tutors | LearnNest" description="Browse 24 sample language tutors in 12 languages on LearnNest. Filter by language, price and rating, and compare demo trial prices." path="/tutors" itemList={tutors}>
+  <h1>Find your language tutor</h1>
+  <p class="lede">Search {tutors.length} sample tutors in {languages.length} languages. Prices in this demo run from ${minPrice} to ${maxPrice} per 50-minute lesson. All profiles are samples, not real people.</p>
+  <p class="demo-note"><strong>Demo data:</strong> ratings, reviews, student counts and lesson counts are sample figures. No tutor here is a real person.</p>
+
+  <div class="filters" role="search">
+    <label for="q">Search</label>
+    <input id="q" type="search" placeholder="Name, language or speciality…" autocomplete="off" />
+    <label for="lang">Language</label>
+    <select id="lang">
+      <option value="">All languages</option>
+      {languages.map((l) => <option value={l}>{l}</option>)}
+    </select>
+    <label for="maxPrice">Max price</label>
+    <select id="maxPrice">
+      <option value="">Any price</option>
+      <option value="15">$15 or less</option>
+      <option value="20">$20 or less</option>
+      <option value="25">$25 or less</option>
+      <option value="30">$30 or less</option>
+      <option value="45">$45 or less</option>
+    </select>
+    <label for="minRating">Min rating</label>
+    <select id="minRating">
+      <option value="">Any rating</option>
+      <option value="4.8">4.8 and above</option>
+      <option value="4.9">4.9 and above</option>
+      <option value="5">5.0 only</option>
+    </select>
+    <label for="sort">Sort by</label>
+    <select id="sort">
+      <option value="reviews">Most reviews</option>
+      <option value="price-asc">Price: low to high</option>
+      <option value="price-desc">Price: high to low</option>
+      <option value="rating">Highest rating</option>
+      <option value="lessons">Most lessons</option>
+    </select>
+  </div>
+  <p><strong id="count"></strong></p>
+  <div class="grid" id="tutor-grid">
+    {tutors.map((t) => <TutorCard tutor={t} />)}
+  </div>
+  <p id="no-results" hidden>No sample tutors match those filters. Try clearing the search or raising the max price.</p>
+  <p><a href="/pricing">How pricing works →</a> · <a href="/how-it-works">How LearnNest works →</a></p>
+
+  <script>
+    // Client-side filtering only — no server, no database, no tracking.
+    const grid = document.getElementById('tutor-grid');
+    const cards = Array.from(grid.children);
+    const countEl = document.getElementById('count');
+    const noResults = document.getElementById('no-results');
+    const q = document.getElementById('q');
+    const lang = document.getElementById('lang');
+    const maxPrice = document.getElementById('maxPrice');
+    const minRating = document.getElementById('minRating');
+    const sort = document.getElementById('sort');
+    // Tutor data is read from the cards themselves, so the list and the
+    // filters can never disagree about names, languages or prices.
+    const data = cards.map((card) => {
+      const text = card.textContent.toLowerCase();
+      const priceMatch = card.textContent.match(/\$(\d+(?:\.\d+)?)\s*\/ 50-min/);
+      const ratingMatch = card.textContent.match(/★\s*([\d.]+)/);
+      const lessonsMatch = card.textContent.match(/([\d,]+) lessons/);
+      return {
+        el: card,
+        text,
+        price: priceMatch ? parseFloat(priceMatch[1]) : 999,
+        rating: ratingMatch ? parseFloat(ratingMatch[1]) : 0,
+        lessons: lessonsMatch ? parseInt(lessonsMatch[1].replace(/,/g, ''), 10) : 0,
+      };
+    });
+    function apply() {
+      const query = q.value.trim().toLowerCase();
+      const langVal = lang.value;
+      const max = maxPrice.value ? parseFloat(maxPrice.value) : Infinity;
+      const minR = minRating.value ? parseFloat(minRating.value) : 0;
+      let shown = data.filter((d) => {
+        if (query && !d.text.includes(query)) return false;
+        if (langVal && !d.text.includes(langVal.toLowerCase() + ' tutor')) return false;
+        if (d.price > max) return false;
+        if (d.rating < minR) return false;
+        return true;
+      });
+      if (sort.value === 'price-asc') shown.sort((a, b) => a.price - b.price);
+      if (sort.value === 'price-desc') shown.sort((a, b) => b.price - a.price);
+      if (sort.value === 'rating') shown.sort((a, b) => b.rating - a.rating);
+      if (sort.value === 'lessons') shown.sort((a, b) => b.lessons - a.lessons);
+      // Default (reviews) keeps the original page order.
+      shown.forEach((d) => grid.appendChild(d.el));
+      data.forEach((d) => { d.el.style.display = shown.includes(d) ? '' : 'none'; });
+      countEl.textContent = shown.length + (shown.length === 1 ? ' tutor' : ' tutors') + ' shown';
+      noResults.hidden = shown.length !== 0;
+    }
+    [q, lang, maxPrice, minRating, sort].forEach((el) => el.addEventListener('input', apply));
+    // Read ?q= and ?lang= from the URL, e.g. from the homepage search
+    // or a language card. The values come only from this page's own URL.
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('q')) q.value = params.get('q');
+    if (params.get('lang')) lang.value = params.get('lang');
+    apply();
+  </script>
+</BaseLayout>

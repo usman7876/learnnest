@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Become a tutor — teach online | LearnNest" description="Teach a language online with LearnNest. Set your own price and hours, meet students worldwide. Demo application only — nothing is sent." path="/become-a-tutor">
+  <h1>Become a tutor on LearnNest</h1>
+  <p class="lede">Share a language you know well, set your own price and hours, and teach students from anywhere — 1-to-1, online.</p>
+  <p class="demo-note"><strong>Demo application:</strong> the form below is a demonstration. It sends nothing and creates no tutor account.</p>
+
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Sign up</h3><p>Create your tutor profile: tell us about yourself, the language you teach, and who you teach best.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Get approved</h3><p>In a real marketplace our team would review your profile, photo and short intro video, usually within a few business days.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Start earning</h3><p>Set your hours, meet students in trial lessons, and teach regularly. You keep teaching; we handle the bookings and payments in the real product.</p></div>
+  </div>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>Be 18 or older.</li>
+    <li>A laptop or desktop computer, a webcam, a microphone, and a stable internet connection.</li>
+    <li>A clear photo of yourself and a short video introduction (up to 2 minutes) in the real product.</li>
+    <li>A written description of your strengths as a tutor, your experience, and who your lessons suit.</li>
+    <li>No teaching certificate is required to apply in the real product — good communication and a personal approach matter most.</li>
+  </ul>
+
+  <h2>Set your own rate</h2>
+  <p>You choose your hourly price and can change it at any time. In this demo, sample tutors charge $8 to $45 per 50-minute lesson.</p>
+  <p><strong>Example, labelled as an example:</strong> a tutor charging $20 per lesson who teaches 10 lessons a week would earn $200 a week before any platform share. Real earnings depend on your price, your hours, and how many students book you — nothing here is a promise of income.</p>
+
+  <h2>Teach anytime, anywhere</h2>
+  <p>Decide when and how many hours you want to teach. There is no minimum time commitment and no fixed schedule in the real product. You are your own boss.</p>
+
+  <h2>Demo application</h2>
+  <p>Fill this in to see how an application would look. Nothing is sent or saved.</p>
+  <form class="demo-form" id="tutor-form">
+    <div><label for="t-name">Your name<input id="t-name" name="name" type="text" required autocomplete="name" /></label></div>
+    <div><label for="t-email">Email<input id="t-email" name="email" type="email" required autocomplete="email" /></label></div>
+    <div><label for="t-lang">Language you teach<select id="t-lang" name="language"><option>English</option><option>Spanish</option><option>French</option><option>German</option><option>Italian</option><option>Portuguese</option><option>Arabic</option><option>Mandarin Chinese</option><option>Japanese</option><option>Korean</option><option>Urdu</option><option>Hindi</option><option>Another language</option></select></label></div>
+    <div><label for="t-rate">Your price per 50-min lesson (USD)<input id="t-rate" name="rate" type="number" min="5" max="100" value="20" required /></label></div>
+    <div><label for="t-about">Tell students about yourself<textarea id="t-about" name="about" rows="4" required placeholder="Who do you teach, and what happens in your lessons?"></textarea></label></div>
+    <button class="btn" type="submit">Submit demo application</button>
+    <p id="tutor-done" hidden><strong>Demo application received — nothing was sent.</strong> In the real product this is where your profile would go for review.</p>
+  </form>
+  <script>
+    document.getElementById('tutor-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('tutor-done').hidden = false;
+    });
+  </script>
+</BaseLayout>

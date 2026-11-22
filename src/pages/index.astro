@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TutorCard from '../components/TutorCard.astro';
+import data from '../data/tutors.json';
+
+const tutors = data.tutors;
+const languages = [...new Set(tutors.map((t) => t.language))];
+const minPrice = Math.min(...tutors.map((t) => t.price));
+const featured = [...tutors].sort((a, b) => b.reviews - a.reviews).slice(0, 6);
+const faqs = [
+  { q: 'Are the tutors on LearnNest real people?', a: 'No. LearnNest is a demo site. Every tutor profile is a sample created to show how the marketplace works. Names, photos, prices, ratings and lesson counts are sample figures, not real people or real reviews.' },
+  { q: 'How much does a lesson cost?', a: 'Each sample tutor sets their own price for a 50-minute lesson. In this demo the prices run from $8 to $45. A 25-minute trial costs half the 50-minute price. No payment is taken on this demo site.' },
+  { q: 'What happens after a trial lesson?', a: 'In a real marketplace you would choose a lesson pack and keep learning with the same tutor. On this demo, booking a trial only shows a confirmation on the page — nothing is booked and nothing is charged.' },
+];
+---
+<BaseLayout title="LearnNest — Learn a language 1-to-1 online" description="Find a 1-to-1 online language tutor on LearnNest. Browse 24 sample tutors in 12 languages, compare prices from $8, and book a demo trial." path="/" isHome faqs={faqs} itemList={featured}>
+  <section class="hero" aria-labelledby="page-title">
+    <h1 id="page-title">Learn a language with a real tutor, 1-to-1 online</h1>
+    <p class="lede">Pick your language, choose a tutor who fits your goal and budget, and start speaking from your very first lesson — at a time that suits you.</p>
+    <form class="search-form" action="/tutors" method="get" role="search">
+      <label for="home-search" style="position:absolute;left:-9999px">Search tutors</label>
+      <input id="home-search" name="q" type="search" placeholder="Try “English”, “Spanish” or a tutor name…" autocomplete="off" />
+      <button class="btn" type="submit">Find my tutor</button>
+    </form>
+    <p class="meta">No account needed to browse. Demo site — sample tutors only.</p>
+    <div class="stats">
+      <div class="stat"><b>{tutors.length}</b><span>sample tutors</span></div>
+      <div class="stat"><b>{languages.length}</b><span>languages</span></div>
+      <div class="stat"><b>from ${minPrice}</b><span>per 50-min lesson</span></div>
+      <div class="stat"><b>25 or 50 min</b><span>trial lesson length</span></div>
+    </div>
+    <p class="demo-note"><strong>Demo notice:</strong> the tutors, prices, ratings and reviews on this site are samples to show how LearnNest works. They are not real people, and no lesson is actually booked or charged.</p>
+  </section>
+
+  <section aria-labelledby="how-heading">
+    <h2 id="how-heading">How LearnNest works</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h3>Find your tutor</h3><p>Search by language, price, rating and availability. Read each sample profile, see their specialities, and check when they teach.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Book a trial lesson</h3><p>Try a 25- or 50-minute trial at the tutor’s price. Meet your tutor, talk about your goals, and see if their style suits you.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Keep learning, your way</h3><p>If it feels right, choose a lesson pack and learn regularly. If not, try another tutor — in the demo, nothing is charged either way.</p></div>
+    </div>
+    <p><a class="btn" href="/tutors">Browse all {tutors.length} tutors →</a> <a class="btn btn-secondary" href="/how-it-works">How it works in detail</a></p>
+  </section>
+
+  <section aria-labelledby="featured-heading">
+    <h2 id="featured-heading">Featured tutors</h2>
+    <p>Sample profiles with the most sample reviews. Every profile is clearly marked as a demo.</p>
+    <div class="grid">{featured.map((t) => <TutorCard tutor={t} />)}</div>
+  </section>
+
+  <section aria-labelledby="lang-heading">
+    <h2 id="lang-heading">Learn a language</h2>
+    <p>Twelve languages, two sample tutors for each. Choose one to see its tutors.</p>
+    <div class="lang-grid">
+      {languages.map((lang) => {
+        const n = tutors.filter((t) => t.language === lang).length;
+        const from = Math.min(...tutors.filter((t) => t.language === lang).map((t) => t.price));
+        return <a class="lang-card" href={`/tutors?lang=${encodeURIComponent(lang)}`}>{lang}<small>{n} sample tutors · from ${from} / lesson</small></a>;
+      })}
+    </div>
+  </section>
+
+  <section aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading">Simple, clear pricing</h2>
+    <p>Each tutor sets their own price for a 50-minute lesson — in this demo, from $8 to $45. A 25-minute trial costs half the lesson price. After a trial, you would pick a lesson pack for 28 days. There are no hidden fees in the demo, and no payment is taken.</p>
+    <p><a class="btn btn-secondary" href="/pricing">See how pricing works →</a></p>
+  </section>
+
+  <section aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Questions people ask</h2>
+    {faqs.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+    <p><a href="/faq">See all questions →</a></p>
+  </section>
+</BaseLayout>

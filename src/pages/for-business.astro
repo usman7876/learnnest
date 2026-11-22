@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Language training for business | LearnNest" description="LearnNest for Business: 1-to-1 online language training for teams, with tutors matched to each person's role and goals. Demo enquiry only." path="/for-business">
+  <h1>Language training for your team</h1>
+  <p class="lede">Help your team speak with confidence — in meetings, with customers, and with colleagues around the world. Each person learns 1-to-1 with a tutor matched to their role and goals.</p>
+  <p class="demo-note"><strong>Demo enquiry:</strong> the form below sends nothing. It shows how a business enquiry would look.</p>
+
+  <h2>What teams get</h2>
+  <ul>
+    <li><strong>1-to-1 lessons, not a big class.</strong> Every learner gets a tutor and a plan built around their job — sales, support, management, or travel.</li>
+    <li><strong>Flexible times.</strong> Lessons fit around work, across time zones, from 25 or 50 minutes.</li>
+    <li><strong>Clear progress.</strong> In the real product, managers would see who is learning, how often, and how they are progressing — without reading private lesson notes.</li>
+    <li><strong>Twelve languages to start.</strong> English, Spanish, French, German, Italian, Portuguese, Arabic, Mandarin Chinese, Japanese, Korean, Urdu and Hindi.</li>
+  </ul>
+
+  <h2>How it would work</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Tell us your goal</h3><p>How many people, which languages, and what they need the language for.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>We match tutors</h3><p>Each learner is matched with a tutor for their level, role and schedule.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Learning starts</h3><p>Lessons begin, and progress is reviewed regularly with your team.</p></div>
+  </div>
+
+  <h2>Ask for a demo</h2>
+  <p>Tell us about your team and we will show you how LearnNest for Business would work. This demo form sends nothing.</p>
+  <form class="demo-form" id="biz-form">
+    <div><label for="biz-name">Your name<input id="biz-name" name="name" type="text" required autocomplete="name" /></label></div>
+    <div><label for="biz-email">Work email<input id="biz-email" name="email" type="email" required autocomplete="email" /></label></div>
+    <div><label for="biz-company">Company<input id="biz-company" name="company" type="text" required autocomplete="organization" /></label></div>
+    <div><label for="biz-size">Team size<select id="biz-size" name="size"><option>1–10 people</option><option>11–50 people</option><option>51–200 people</option><option>More than 200 people</option></select></label></div>
+    <div><label for="biz-msg">What does your team need?<textarea id="biz-msg" name="message" rows="4" placeholder="For example: 12 people need Business English for customer calls."></textarea></label></div>
+    <button class="btn" type="submit">Send demo enquiry</button>
+    <p id="biz-done" hidden><strong>Demo enquiry — nothing was sent.</strong> In the real product this is where our business team would reply to you.</p>
+  </form>
+  <script>
+    document.getElementById('biz-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('biz-done').hidden = false;
+    });
+  </script>
+</BaseLayout>

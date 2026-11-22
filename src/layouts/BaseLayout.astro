@@ -1,0 +1,125 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'LearnNest — Learn a language 1-to-1 online',
+  description = 'LearnNest is an independent demo marketplace for 1-to-1 online language lessons. Browse sample tutors, compare prices, and book a demo trial lesson.',
+  path = '/',
+  isHome = false,
+  faqs = null,
+  itemList = null,
+} = Astro.props;
+
+const site = Astro.site;
+const canonical = new URL(path === '/' ? '/' : `${path}/`, site).href;
+const abs = (href) => new URL(href === '/' ? '/' : `${href}/`, site).href;
+
+const jsonLd = [];
+if (isHome) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'LearnNest',
+    url: canonical,
+    description: 'An independent demo marketplace for 1-to-1 online language lessons.',
+  });
+}
+if (faqs) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+if (itemList) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: itemList.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `${item.name} — ${item.language} tutor`,
+      url: abs(`/tutors/${item.slug}`),
+    })),
+  });
+}
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LearnNest" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="theme-color" content="#4338CA" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {jsonLd.map((data) => (
+      <script type="application/ld+json" set:html={JSON.stringify(data)} />
+    ))}
+  </head>
+  <body>
+    <div class="demo-bar"><strong>Demo site:</strong> all tutors on LearnNest are sample profiles, not real people. No payment is taken.</div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="/" aria-label="LearnNest home">Learn<span>Nest</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" onclick="var n=document.getElementById('main-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu ☰</button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="/tutors">Find tutors</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/become-a-tutor">Become a tutor</a>
+          <a href="/for-business">For business</a>
+          <a href="/how-it-works">How it works</a>
+          <a href="/faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h3>LearnNest</h3>
+          <p>Learn a language with a real tutor, 1-to-1 online — at a time that suits you, at a price you choose.</p>
+          <p>LearnNest is an independent demo marketplace. Tutors shown are sample profiles, not real people. Not affiliated with Preply.</p>
+        </div>
+        <div>
+          <h3>Learn</h3>
+          <ul>
+            <li><a href="/tutors">Find tutors</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/how-it-works">How it works</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="/about">About LearnNest</a></li>
+            <li><a href="/become-a-tutor">Become a tutor</a></li>
+            <li><a href="/for-business">For business</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy policy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/cookies-policy">Cookies policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 LearnNest — demo site. Sample tutor data only. No real lessons, payments or accounts.</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const faqs = [
+  { q: 'Are the tutors on LearnNest real people?', a: 'No. LearnNest is a demo site. Every tutor profile is a sample created to show how the marketplace works. Names, prices, ratings, reviews and lesson counts are sample figures, not real people or real reviews.' },
+  { q: 'How much does a lesson cost?', a: 'Each sample tutor sets their own price for a 50-minute lesson. In this demo the prices run from $8 to $45. A 25-minute trial costs half the 50-minute price. No payment is taken on this demo site.' },
+  { q: 'How do trial lessons work?', a: 'A trial is a short first lesson — 25 or 50 minutes — where you meet your tutor, talk about your goals, and see if their teaching style suits you. On this demo, submitting the booking form only shows a confirmation on the page.' },
+  { q: 'What happens after a trial lesson?', a: 'In a real marketplace you would choose a lesson pack — for example 4, 8 or 12 lessons per 28 days — and keep learning with the same tutor. If the tutor is not right for you, you would try another tutor.' },
+  { q: 'Can I change or cancel a lesson?', a: 'In a real marketplace you could reschedule or cancel a lesson before it starts, usually up to 12–24 hours ahead. On this demo there is no account and no real booking, so there is nothing to change or cancel.' },
+  { q: 'Do I need an account to browse tutors?', a: 'No. You can browse all sample tutors, read their profiles and compare prices without an account. An account would only be needed in the real product to book and pay for lessons.' },
+  { q: 'Which languages can I learn?', a: 'Twelve languages in this demo: English, Spanish, French, German, Italian, Portuguese, Arabic, Mandarin Chinese, Japanese, Korean, Urdu and Hindi — two sample tutors for each.' },
+  { q: 'What do I need for a lesson?', a: 'In the real product you would need a computer, tablet or phone with a camera and microphone, a stable internet connection, and a quiet place to talk. Lessons would take place in an online classroom — no separate video app needed.' },
+  { q: 'How do I become a tutor?', a: 'See the Become a tutor page. You need to be 18 or older, have a laptop, webcam and microphone, and be ready to create a profile with a photo, a short video and a description. The form on this demo site sends nothing.' },
+  { q: 'Is LearnNest connected to Preply?', a: 'No. LearnNest is an independent demo marketplace. It is inspired by the idea of 1-to-1 online language tutoring, but it is not affiliated with Preply, and it uses no Preply name, logo, text, photos or tutor profiles.' },
+];
+---
+<BaseLayout title="Frequently asked questions | LearnNest" description="Answers about LearnNest: demo tutors, trial lessons, prices, lesson packs, and how to become a tutor. All sample data, no payments taken." path="/faq" faqs={faqs}>
+  <h1>Frequently asked questions</h1>
+  <p class="lede">Short answers about how LearnNest works. Remember: this is a demo site, so no lesson is really booked and no payment is taken.</p>
+  {faqs.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+  <p>Still unsure? <a href="/contact">Contact us</a> — the form is a demo and sends nothing.</p>
+</BaseLayout>

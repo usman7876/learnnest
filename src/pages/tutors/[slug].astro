@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import data from '../../data/tutors.json';
+
+export function getStaticPaths() {
+  return data.tutors.map((t) => ({ params: { slug: t.slug }, props: { tutor: t } }));
+}
+
+const { tutor } = Astro.props;
+const others = data.tutors.filter((t) => t.language === tutor.language && t.slug !== tutor.slug);
+const title = `${tutor.name} — ${tutor.language} tutor | LearnNest`;
+const description = `${tutor.name} is a sample ${tutor.language} tutor on LearnNest (demo profile). $${tutor.price} per 50-min lesson, trial $${tutor.trialPrice}. Not a real person.`;
+---
+<BaseLayout title={title} description={description} path={`/tutors/${tutor.slug}`}>
+  <p><a href="/tutors">← All tutors</a> · <a href={`/tutors?lang=${encodeURIComponent(tutor.language)}`}>{tutor.language} tutors</a></p>
+  <div class="demo-note"><strong>Demo profile:</strong> {tutor.name} is a sample profile created for LearnNest. This is not a real person, and the ratings, reviews and lesson counts are sample figures.</div>
+  <section aria-labelledby="page-title">
+    <div class="tutor-top">
+      <div class="avatar avatar-lg" style={`background:${tutor.avatarColor}`} aria-hidden="true">{tutor.initials}</div>
+      <div>
+        <h1 id="page-title" style="margin:0">{tutor.name}</h1>
+        <p class="meta">{tutor.language} tutor · From {tutor.country} · {tutor.yearsExperience} years’ experience (sample)</p>
+        <p><span class="stars">★ {tutor.rating}</span> <span class="meta">({tutor.reviews} sample reviews) · {tutor.students} students · {tutor.lessons.toLocaleString()} lessons (sample)</span></p>
+        <p>{tutor.isSuperTutor && <span class="badge">Super tutor</span>} {tutor.isProfessional && <span class="badge badge-green">Professional</span>} <span class="badge badge-grey">Demo profile</span></p>
+      </div>
+    </div>
+  </section>
+
+  <h2>About {tutor.name}</h2>
+  <p>{tutor.about}</p>
+
+  <h2>What {tutor.name} teaches</h2>
+  <div class="chips">{tutor.specialties.map((s) => <span class="chip">{s}</span>)}</div>
+
+  <h2>Languages spoken</h2>
+  <ul>{tutor.speaks.map((l) => <li>{l}</li>)}</ul>
+
+  <h2>Sample availability</h2>
+  <p class="meta">Times shown are samples in UTC, for demonstration only.</p>
+  <table>
+    <thead><tr><th>Days</th><th>Times (UTC)</th></tr></thead>
+    <tbody>
+      {tutor.availability.map((a) => { const parts = a.split(': '); return <tr><td>{parts[0]}</td><td>{parts[1]}</td></tr>; })}
+    </tbody>
+  </table>
+
+  <h2>Price</h2>
+  <p><span class="price">${tutor.price} <small>/ 50-minute lesson</small></span></p>
+  <p>Trial lesson: <strong>${tutor.trialPrice}</strong> for 25 minutes, or <strong>${tutor.price}</strong> for 50 minutes. Sample price — no payment is taken on this demo site.</p>
+
+  <h2>Book a demo trial lesson</h2>
+  <p>This form is a demonstration only. It sends nothing, books nothing, and charges nothing.</p>
+  <form class="demo-form" id="booking-form">
+    <div><label for="b-name">Your name<input id="b-name" name="name" type="text" required autocomplete="name" /></label></div>
+    <div><label for="b-email">Email<input id="b-email" name="email" type="email" required autocomplete="email" /></label></div>
+    <div><label for="b-date">Preferred date<input id="b-date" name="date" type="date" required /></label></div>
+    <div><label for="b-time">Preferred time (UTC)<select id="b-time" name="time" required><option value="">Choose a time…</option><option>09:00</option><option>12:00</option><option>15:00</option><option>18:00</option><option>20:00</option></select></label></div>
+    <div><label for="b-length">Lesson length<select id="b-length" name="length"><option value="25">25 minutes — ${tutor.trialPrice}</option><option value="50">50 minutes — ${tutor.price}</option></select></label></div>
+    <button class="btn" type="submit">Book demo trial</button>
+    <p id="booking-done" hidden><strong>Demo booking — nothing was booked or charged.</strong> In a real marketplace this is where your trial would be confirmed with {tutor.name}.</p>
+  </form>
+  <script>
+    document.getElementById('booking-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('booking-done').hidden = false;
+    });
+  </script>
+
+  {others.length > 0 && (
+    <section aria-labelledby="other-heading">
+      <h2 id="other-heading">Other {tutor.language} tutors</h2>
+      <p>{others.map((o) => <><a href={`/tutors/${o.slug}`}>{o.name} — ${o.price} / 50 min</a><br /></>)}</p>
+    </section>
+  )}
+</BaseLayout>

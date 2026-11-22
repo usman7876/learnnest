@@ -1,0 +1,20 @@
+---
+const { tutor } = Astro.props;
+const fmt = (n) => `$${n}`;
+---
+<article class="card">
+  <div class="tutor-top">
+    <div class="avatar" style={`background:${tutor.avatarColor}`} aria-hidden="true">{tutor.initials}</div>
+    <div>
+      <h3 style="margin:0"><a href={`/tutors/${tutor.slug}`}>{tutor.name}</a></h3>
+      <p class="meta" style="margin:2px 0">{tutor.language} tutor · From {tutor.country}</p>
+      <p style="margin:2px 0"><span class="stars">★ {tutor.rating}</span> <span class="meta">({tutor.reviews} sample reviews)</span></p>
+      <p style="margin:4px 0">{tutor.isSuperTutor && <span class="badge">Super tutor</span>} {tutor.isProfessional && <span class="badge badge-green">Professional</span>} <span class="badge badge-grey">Demo profile</span></p>
+    </div>
+  </div>
+  <p>{tutor.specialties.join(' · ')}</p>
+  <div class="chips">{tutor.specialties.map((s) => <span class="chip">{s}</span>)}</div>
+  <p class="meta">{tutor.students} students · {tutor.lessons.toLocaleString()} lessons · {tutor.yearsExperience} years’ experience (sample)</p>
+  <p style="margin-top:auto"><span class="price">{fmt(tutor.price)} <small>/ 50-min lesson</small></span><br /><span class="meta">Trial: {fmt(tutor.trialPrice)} for 25 min</span></p>
+  <p><a class="btn" href={`/tutors/${tutor.slug}`}>View {tutor.name} →</a></p>
+</article>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import data from '../data/tutors.json';
+const tutors = data.tutors;
+const languages = [...new Set(tutors.map((t) => t.language))];
+---
+<BaseLayout title="About LearnNest | LearnNest" description="About LearnNest: an independent demo marketplace for 1-to-1 online language lessons, with 24 sample tutors in 12 languages. Not affiliated with Preply." path="/about">
+  <h1>About LearnNest</h1>
+  <p class="lede">LearnNest is a demo marketplace for 1-to-1 online language lessons. It shows how a tutor marketplace works — finding a tutor, comparing prices, booking a trial, and learning regularly — without any real lessons, payments or accounts.</p>
+  <h2>What is on this site?</h2>
+  <ul>
+    <li><strong>{tutors.length} sample tutors</strong> in <strong>{languages.length} languages</strong>: {languages.join(', ')}.</li>
+    <li>Sample prices from ${Math.min(...tutors.map((t) => t.price))} to ${Math.max(...tutors.map((t) => t.price))} per 50-minute lesson.</li>
+    <li>Demo trial-booking, tutor-application, business-enquiry and contact forms. Every form shows a confirmation on the page and sends nothing.</li>
+  </ul>
+  <h2>What LearnNest is not</h2>
+  <p>LearnNest is <strong>not</strong> a real tutoring service. The tutors are sample profiles, not real people. The reviews, ratings, student counts and lesson counts are sample figures. No lesson is taught here, no payment is taken, and no account is created.</p>
+  <p>LearnNest is also <strong>not affiliated with Preply</strong> or any other tutoring company. It was inspired by the general idea of 1-to-1 online language tutoring. It uses no Preply name, logo, text, photos, layout or tutor profiles. All design, wording and tutor data on this site are original.</p>
+  <h2>Why a demo?</h2>
+  <p>A demo lets us show the full experience — search, filters, tutor profiles, pricing and booking — quickly and safely, before building real accounts, payments and a live video classroom. If LearnNest becomes a real product, those parts would be added with real tutors, real reviews and clear terms.</p>
+  <p><a class="btn" href="/tutors">Browse the sample tutors →</a></p>
+</BaseLayout>

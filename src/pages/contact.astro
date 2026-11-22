@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Contact LearnNest | LearnNest" description="Contact LearnNest with a question about the demo site. The form is a demonstration only and sends nothing — no email address is published." path="/contact">
+  <h1>Contact LearnNest</h1>
+  <p class="lede">Have a question about this demo site? Use the form below. It is a demonstration only — it sends nothing, and no email address is published on this site.</p>
+  <form class="demo-form" id="contact-form">
+    <div><label for="c-name">Your name<input id="c-name" name="name" type="text" required autocomplete="name" /></label></div>
+    <div><label for="c-email">Email<input id="c-email" name="email" type="email" required autocomplete="email" /></label></div>
+    <div><label for="c-topic">Topic<select id="c-topic" name="topic"><option>Question about the demo</option><option>Report a mistake on a page</option><option>Become a tutor</option><option>LearnNest for Business</option><option>Something else</option></select></label></div>
+    <div><label for="c-msg">Your message<textarea id="c-msg" name="message" rows="5" required></textarea></label></div>
+    <button class="btn" type="submit">Send demo message</button>
+    <p id="contact-done" hidden><strong>Demo message — nothing was sent.</strong> In the real product this is where your message would reach the LearnNest team.</p>
+  </form>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('contact-done').hidden = false;
+    });
+  </script>
+  <h2>Other pages that may help</h2>
+  <ul>
+    <li><a href="/faq">Frequently asked questions</a></li>
+    <li><a href="/how-it-works">How LearnNest works</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+</BaseLayout>
