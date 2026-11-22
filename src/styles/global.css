@@ -139,3 +139,8 @@ footer.site-footer li{margin:6px 0}
 .word-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
 .word-table th,.word-table td{border:1px solid var(--border);padding:8px 10px;text-align:left}
 .word-table th{background:#EEF2FF}
+
+/* Ad slots — empty placeholders for future advertising. No ad scripts, no external requests. */
+.ad-slot{display:flex;align-items:center;justify-content:center;height:250px;margin:24px 0;border:2px dashed #C7D2FE;border-radius:var(--radius);background:#F5F7FF;color:var(--muted);font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ad-slot-leaderboard{height:100px}
+@media(min-width:700px){.ad-slot-leaderboard{height:250px}}

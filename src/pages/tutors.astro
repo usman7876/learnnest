@@ -59,6 +59,7 @@ const maxPrice = Math.max(...tutors.map((t) => t.price));
     </select>
   </div>
   <p><strong id="count"></strong></p>
+  <div class="ad-slot" role="complementary" aria-label="Advertisement"><span>Advertisement</span></div>
   <div class="grid" id="tutor-grid">
     {tutors.map((t) => <TutorCard tutor={t} />)}
   </div>

@@ -95,6 +95,8 @@ const slotTimes = [...new Set(Object.values(tutor.availability).flat())].sort();
     </aside>
   </div>
 
+  <div class="ad-slot" role="complementary" aria-label="Advertisement"><span>Advertisement</span></div>
+
   <script define:vars={{ tutorSlug: tutor.slug, tutorName: tutor.name }}>
     (function () {
       var DAY_INDEX = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
